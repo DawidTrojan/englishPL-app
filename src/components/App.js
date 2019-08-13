@@ -2,12 +2,13 @@ import React from "react";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
+import Main from '../containers/Main'
 
 const App = () => {
   return (
     <Router>
       <Header />
-      <Switch />
+      <Main />
       <Footer />
     </Router>
   );
