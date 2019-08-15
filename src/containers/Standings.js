@@ -1,19 +1,19 @@
 import { connect } from "react-redux";
-import Main from "../components/Main";
-import { getTeams } from "../redux/main/actions";
+import Standings from "../components/Standings";
+import { getStandings } from "../redux/standings/actions";
 
 const mapState = state => ({
-  teams: state.teams,
+  standings: state.standings,
   loading: state.loading
 });
 
 const mapDispatch = dispatch => {
   return {
-    getTeams: () => dispatch(getTeams())
+    getStandings: () => dispatch(getStandings())
   };
 };
 
 export default connect(
   mapState,
   mapDispatch
-)(Main);
+)(Standings);
