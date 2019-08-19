@@ -24,7 +24,7 @@ export const fetchedFixturesError = payload => {
 
 export const getFixtures = matchday => dispatch => {
   dispatch(startFetchingFixtures());
-  const getFixturesUrl = matchday =>
+  const getFixturesUrl = (matchday = 1) =>
     `http://api.football-data.org//v2/competitions/2021/matches?matchday=${matchday}`;
   fetch(getFixturesUrl(matchday), {
     headers: {

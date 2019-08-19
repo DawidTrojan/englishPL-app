@@ -1,14 +1,9 @@
 import React from "react";
 
-const Select = () => {
-  const handleOnChange = e => {
-    e.preventDefault();
-    getMovies(e.target.search.value);
-  };
-
+const Select = ({ changeList }) => {
   return (
     <form>
-      <select onChange={handleOnChange} name="Fixtures">
+      <select onChange={changeList}>
         <option value="1">Matchday 1</option>
         <option value="2">Matchday 2</option>
         <option value="3">Matchday 3</option>

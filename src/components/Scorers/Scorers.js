@@ -8,7 +8,7 @@ const Scorers = ({ scorers, getScorers, loading }) => {
   return (
     <ol>
       {scorers.scorers.map(el => (
-        <li>
+        <li key={el.player.id}>
           <span>{el.player.name}</span>
           <br />
           <span> Birthday: {el.player.dateOfBirth}</span>
