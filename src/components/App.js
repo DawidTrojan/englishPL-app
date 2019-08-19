@@ -12,23 +12,19 @@ import { Container, Row } from "react-bootstrap";
 const App = () => {
   return (
     <Router>
+      <Header />
       <Container>
-        <Row className="justify-content-md-left">
-          <Header />
+        <Row className="justify-content-md-center">
+          <Standings />
         </Row>
-        <Container>
-          <Row className="justify-content-md-center">
-            <Standings />
-          </Row>
-          <Row className="justify-content-md-center">
-            <Scorers />
-          </Row>
-          <Row className="justify-content-md-center">
-            <Fixtures />
-          </Row>
-        </Container>
-        <Footer />
+        <Row className="justify-content-md-center">
+          <Scorers />
+        </Row>
+        <Row className="justify-content-md-center">
+          <Fixtures />
+        </Row>
       </Container>
+      <Footer />
     </Router>
   );
 };

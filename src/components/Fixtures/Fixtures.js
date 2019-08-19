@@ -10,7 +10,7 @@ const Fixtures = ({ fixtures, getFixtures, loading }) => {
     getFixtures(e.target.value);
   };
   return (
-    <>
+    <div className="fixtures_select">
       <Select changeList={handleOnChange} />
       <ul>
         {loading ? (
@@ -19,12 +19,13 @@ const Fixtures = ({ fixtures, getFixtures, loading }) => {
           fixtures.fixtures.map(match => (
             <li key={match.id}>
               {match.homeTeam.name} {match.score.fullTime.homeTeam} :{" "}
-              {match.score.fullTime.awayTeam} {match.awayTeam.name}
+              {match.score.fullTime.awayTeam} {match.awayTeam.name}{" "}
+              {match.utcDate}
             </li>
           ))
         )}
       </ul>
-    </>
+    </div>
   );
 };
 
