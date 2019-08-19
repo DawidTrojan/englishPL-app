@@ -25,7 +25,7 @@ export const fetchedScorersError = payload => {
 export const getScorers = () => dispatch => {
   dispatch(startFetchingScorers());
   const url =
-    "http://api.football-data.org/v2/competitions/2021/scorers?limit=15";
+    "http://api.football-data.org/v2/competitions/2021/scorers?limit=10";
   fetch(url, {
     headers: {
       "X-Auth-Token": "408aa47e157148eca4dd2d77436dff81"
