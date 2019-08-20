@@ -3,7 +3,8 @@ import React from "react";
 const Select = ({ changeList }) => {
   return (
     <form>
-      <select onChange={changeList}>
+      <h2>Select a matchday: </h2>
+      <select className="form-control" onChange={changeList}>
         <option value="1">Matchday 1</option>
         <option value="2">Matchday 2</option>
         <option value="3">Matchday 3</option>

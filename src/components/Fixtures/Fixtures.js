@@ -12,19 +12,29 @@ const Fixtures = ({ fixtures, getFixtures, loading }) => {
   return (
     <div className="fixtures_select">
       <Select changeList={handleOnChange} />
-      <ul>
-        {loading ? (
-          <div>Loading</div>
-        ) : (
-          fixtures.fixtures.map(match => (
-            <li key={match.id}>
-              {match.homeTeam.name} {match.score.fullTime.homeTeam} :{" "}
-              {match.score.fullTime.awayTeam} {match.awayTeam.name}{" "}
-              {match.utcDate}
-            </li>
-          ))
-        )}
-      </ul>
+      <div className="fixtures_table_container">
+        <table className="fixtures">
+          <thead>
+            <tr className="fixtures_description">
+              <th>Home Team</th>
+              <th>Score</th>
+              <th>Away Team</th>
+              <th>Date and Time</th>
+            </tr>
+            {fixtures.fixtures.map(match => (
+              <tr className="fixtures_positions" key={match.id}>
+                <td>{match.homeTeam.name} </td>
+                <td>
+                  <span>{match.score.fullTime.homeTeam} : </span>
+                  <span>{match.score.fullTime.awayTeam}</span>
+                </td>
+                <td>{match.awayTeam.name} </td>
+                <td>{match.utcDate}</td>
+              </tr>
+            ))}
+          </thead>
+        </table>
+      </div>
     </div>
   );
 };

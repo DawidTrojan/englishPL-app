@@ -1,0 +1,62 @@
+.table_container {
+  margin-bottom: 2rem;
+}
+
+.premier_league {
+  color: #ffffff;
+  td {
+    padding: 5px 40px;
+    text-align: center;
+    border: solid #360037 1px;
+  }
+  .team-header {
+    padding: 5px 40px;
+    text-align: left;
+  }
+  th {
+    text-align: center;
+  }
+
+  .team {
+    text-align: left;
+  }
+
+  .table_positions {
+    background: #8a0036;
+    &:nth-of-type(3) {
+      background: #ff0047;
+    }
+    &:nth-of-type(4) {
+      background: #e10040;
+    }
+    &:nth-of-type(5) {
+      background: #e10040;
+    }
+    &:nth-of-type(6) {
+      background: #e10040;
+    }
+
+    &:nth-of-type(20) {
+      background: #ab0039;
+    }
+
+    &:nth-of-type(21) {
+      background: #ab0039;
+    }
+    &:nth-of-type(22) {
+      background: #ab0039;
+    }
+  }
+
+  .table_description {
+    background: #360037;
+  }
+
+  .table_title {
+    background: #360037;
+    th {
+      font-size: 1.5rem;
+      padding: 0.2rem;
+    }
+  }
+}

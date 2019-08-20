@@ -3,10 +3,17 @@
 @import "select";
 @import "header";
 @import "logo";
+@import "table";
+@import "scorers";
+@import "fixtures";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Space Mono", monospace;
+}
+
+form {
+  text-align: center;
 }
