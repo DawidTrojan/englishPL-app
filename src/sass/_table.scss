@@ -4,6 +4,8 @@
 
 .premier_league {
   color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
   td {
     padding: 5px 40px;
     text-align: center;
@@ -19,6 +21,11 @@
 
   .team {
     text-align: left;
+    img {
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-right: 0.7rem;
+    }
   }
 
   .table_positions {

@@ -27,7 +27,10 @@ const Standings = ({ standings, getStandings, loading }) => {
             el.table.map(el => (
               <tr className="table_positions" key={el.position}>
                 <td className="position">{el.position}</td>
-                <td className="team">{el.team.name}</td>
+                <td className="team">
+                  <img src={el.team.crestUrl} alt="Logo" />
+                  {el.team.name}
+                </td>
                 <td className="played">{el.playedGames}</td>
                 <td className="won">{el.won}</td>
                 <td className="draw">{el.draw}</td>

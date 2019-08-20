@@ -1,6 +1,17 @@
 header {
   color: #ffffff;
-  min-height: 50vh;
+  max-height: 100px;
   width: 100%;
-  background: #ffffff;
+  background: #360037;
+  margin-bottom: 2rem;
+}
+
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  ul {
+    list-style: none;
+  }
 }
