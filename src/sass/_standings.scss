@@ -2,6 +2,8 @@
 
 .table_container {
   margin-bottom: 2rem;
+  height: 100vh;
+  margin: 6rem 0;
 }
 
 .premier_league {
@@ -14,11 +16,12 @@
     border-bottom: solid $table-title-color 1px;
   }
   .team-header {
-    padding: 0.3rem 1.3rem;
+    padding: 0.3rem 1.2rem;
     text-align: left;
   }
   th {
     text-align: center;
+    padding-left: 0.3rem;
   }
 
   .team {
@@ -59,14 +62,6 @@
 
   .table_description {
     background: $table-title-color;
-  }
-
-  .table_title {
-    background: $table-title-color;
-    th {
-      font-size: 1.5rem;
-      padding: 0.2rem;
-    }
   }
 }
 

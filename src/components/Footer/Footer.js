@@ -1,7 +1,13 @@
 import React from "react";
-
-const Footer = () => {
-  return <footer>&copy;Dawid Trojan 2019</footer>;
-};
+import { Container } from "react-bootstrap";
+const Footer = () => (
+  <footer>
+    <Container>
+      <div className="footer_container">
+        <span>&copy; Dawid Trojan 2019</span>
+      </div>
+    </Container>
+  </footer>
+);
 
 export default Footer;

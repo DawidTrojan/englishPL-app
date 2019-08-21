@@ -1,8 +1,19 @@
 footer {
-  max-height: 100px;
+  background: #37003c;
+  min-height: 80px;
   width: 100%;
+  color: #ffffff;
 
   display: flex;
   justify-content: center;
   align-items: center;
+
+  .footer_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    font-size: 0.9rem;
+    text-transform: uppercase;
+  }
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import mainLogo from "./englishpl.png";
+import mainLogo from "./logo.png";
 const Logo = () => (
   <div className="logo_image">
     <img src={mainLogo} alt="" />

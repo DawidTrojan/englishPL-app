@@ -5,9 +5,6 @@ const Table = ({ standings }) => (
   <div className="table_container">
     <table className="premier_league">
       <thead>
-        <tr className="table_title">
-          <th>Premier League 2019/20</th>
-        </tr>
         <tr className="table_description">
           <th>Position</th>
           <th className="team-header">Team</th>
