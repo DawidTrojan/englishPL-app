@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import Select from "./Select";
+import Table from "./Table";
 
-const Fixtures = ({ fixtures, getFixtures, loading }) => {
+const Fixtures = ({ fixtures: { fixtures }, getFixtures, loading }) => {
   useEffect(() => {
     getFixtures();
   }, [getFixtures]);
@@ -12,29 +13,7 @@ const Fixtures = ({ fixtures, getFixtures, loading }) => {
   return (
     <div className="fixtures_select">
       <Select changeList={handleOnChange} />
-      <div className="fixtures_table_container">
-        <table className="fixtures">
-          <thead>
-            <tr className="fixtures_description">
-              <th>Home Team</th>
-              <th>Score</th>
-              <th>Away Team</th>
-              <th>Date and Time</th>
-            </tr>
-            {fixtures.fixtures.map(match => (
-              <tr className="fixtures_positions" key={match.id}>
-                <td>{match.homeTeam.name} </td>
-                <td>
-                  <span>{match.score.fullTime.homeTeam} : </span>
-                  <span>{match.score.fullTime.awayTeam}</span>
-                </td>
-                <td>{match.awayTeam.name} </td>
-                <td>{match.utcDate}</td>
-              </tr>
-            ))}
-          </thead>
-        </table>
-      </div>
+      <Table fixtures={fixtures} />
     </div>
   );
 };
