@@ -1,0 +1,37 @@
+.header_nav {
+  .header_nav_list {
+    min-width: 20rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    list-style: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+
+    li {
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      padding: 0.9rem 1.1rem;
+      position: relative;
+
+      &:after {
+        content: "";
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: #333;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+      }
+
+      &:hover {
+        left: 0;
+        cursor: pointer;
+      }
+    }
+  }
+}

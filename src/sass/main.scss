@@ -1,5 +1,4 @@
 @import "main";
-@import "wrapper";
 @import "select";
 @import "header";
 @import "logo";
@@ -8,10 +7,23 @@
 @import "fixtures";
 @import "footer";
 @import "colors";
+@import "navigation";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Space Mono", monospace;
+}
+
+.active {
+  color: #fff;
+}
+
+.link {
+  color: #fff;
+
+  &:hover {
+    text-decoration: none;
+  }
 }

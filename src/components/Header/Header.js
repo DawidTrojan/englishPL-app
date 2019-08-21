@@ -1,18 +1,15 @@
 import React from "react";
 import Logo from "./Logo";
-import { Container, Row, Col } from "react-bootstrap";
+import Menu from "./Menu";
+import { Container, Row } from "react-bootstrap";
+
 const Header = () => (
   <header>
     <Container>
-      <div className="header_container">
+      <Row className="justify-content-between align-items-center">
         <Logo />
-        <nav>
-          <ul>
-            <li>Sign in</li>
-            <li>Register</li>
-          </ul>
-        </nav>
-      </div>
+        <Menu />
+      </Row>
     </Container>
   </header>
 );

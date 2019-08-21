@@ -1,21 +1,12 @@
-import React, { useEffect } from "react";
-
-const Main = ({ teams, getTeams, loading }) => {
-  useEffect(() => {
-    getTeams();
-  }, [getTeams]);
-
-  return (
-    <ol>
-      {teams.teams.map(team => (
-        <div className="teamContainer" key={team.id}>
-          <li>{team.name}</li>
-          <p>{team.email}</p>
-          <a href={team.website}>Go to Website!</a>
-        </div>
-      ))}
-    </ol>
-  );
-};
+import React from "react";
+import image from "./main.jpg";
+import { Container } from "react-bootstrap";
+const Main = () => (
+  <Container>
+    <div className="main_image">
+      <img src={image} alt="" />
+    </div>
+  </Container>
+);
 
 export default Main;

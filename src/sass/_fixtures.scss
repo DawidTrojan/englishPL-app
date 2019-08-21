@@ -18,3 +18,10 @@
     background: $table-fourth-color;
   }
 }
+
+.fixtures_select {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

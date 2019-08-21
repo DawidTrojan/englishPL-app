@@ -2,6 +2,7 @@
 
 .scorers {
   color: #ffffff;
+
   td {
     padding: 0.5rem 1.3rem;
     text-align: center;
@@ -34,4 +35,10 @@
   .scorers_positions {
     background: $table-fourth-color;
   }
+}
+
+.scorers_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
