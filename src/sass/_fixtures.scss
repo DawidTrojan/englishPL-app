@@ -1,18 +1,20 @@
+@import "colors";
+
 .fixtures {
   color: #ffffff;
   td {
-    padding: 5px 40px;
+    padding: 0.5rem 2rem;
     text-align: center;
-    border-bottom: solid #360037 1px;
+    border-bottom: solid $table-title-color 1px;
   }
   .fixtures_description {
-    background: #360037;
+    background: $table-title-color;
   }
   th {
     text-align: center;
   }
 
   .fixtures_positions {
-    background: #8a0036;
+    background: $table-fourth-color;
   }
 }

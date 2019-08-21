@@ -5,7 +5,7 @@ const TableList = ({ standingsList }) => (
     {standingsList.map(el =>
       el.table.map(el => (
         <tr className="table_positions" key={el.position}>
-          <td className="position">{el.position}</td>
+          <td className="position">{el.position}.</td>
           <td className="team">
             <img src={el.team.crestUrl} alt="Logo" />
             {el.team.name}

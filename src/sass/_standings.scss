@@ -1,3 +1,5 @@
+@import "colors";
+
 .table_container {
   margin-bottom: 2rem;
 }
@@ -7,12 +9,12 @@
   white-space: nowrap;
   overflow: hidden;
   td {
-    padding: 5px 40px;
+    padding: 0.5rem 1.3rem;
     text-align: center;
-    border-bottom: solid #360037 1px;
+    border-bottom: solid $table-title-color 1px;
   }
   .team-header {
-    padding: 5px 40px;
+    padding: 0.3rem 1.3rem;
     text-align: left;
   }
   th {
@@ -29,38 +31,38 @@
   }
 
   .table_positions {
-    background: #8a0036;
+    background: $table-third-color;
     &:nth-of-type(3) {
-      background: #ff0047;
+      background: $table-first-color;
     }
     &:nth-of-type(4) {
-      background: #e10040;
+      background: $table-second-color;
     }
     &:nth-of-type(5) {
-      background: #e10040;
+      background: $table-second-color;
     }
     &:nth-of-type(6) {
-      background: #e10040;
+      background: $table-second-color;
     }
 
     &:nth-of-type(20) {
-      background: #ab0039;
+      background: $table-fourth-color;
     }
 
     &:nth-of-type(21) {
-      background: #ab0039;
+      background: $table-fourth-color;
     }
     &:nth-of-type(22) {
-      background: #ab0039;
+      background: $table-fourth-color;
     }
   }
 
   .table_description {
-    background: #360037;
+    background: $table-title-color;
   }
 
   .table_title {
-    background: #360037;
+    background: $table-title-color;
     th {
       font-size: 1.5rem;
       padding: 0.2rem;

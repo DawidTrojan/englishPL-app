@@ -1,12 +1,14 @@
+@import "colors";
+
 .scorers {
   color: #ffffff;
   td {
-    padding: 5px 40px;
+    padding: 0.5rem 1.3rem;
     text-align: center;
-    border-bottom: solid #360037 1px;
+    border-bottom: solid $table-title-color 1px;
   }
   .scorers-header {
-    padding: 5px 40px;
+    padding: 0.3rem 1.3rem;
     text-align: left;
   }
   th {
@@ -18,11 +20,11 @@
   }
 
   .scorers_description {
-    background: #360037;
+    background: $table-title-color;
   }
 
   .scorers_title {
-    background: #360037;
+    background: $table-title-color;
     th {
       font-size: 1.5rem;
       padding: 0.2rem;
@@ -30,6 +32,6 @@
   }
 
   .scorers_positions {
-    background: #8a0036;
+    background: $table-fourth-color;
   }
 }
