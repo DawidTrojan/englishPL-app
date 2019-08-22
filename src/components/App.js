@@ -2,7 +2,7 @@ import React from "react";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
-import Main from "../components/Main";
+import Main from "../containers/Main";
 import Standings from "../containers/Standings";
 import Fixtures from "../containers/Fixtures";
 import Scorers from "../containers/Scorers";
@@ -15,7 +15,6 @@ const App = () => {
     <Router>
       <Header />
       <Teams />
-
       <Container>
         <Switch>
           <Route exact path="/" component={Main} />
