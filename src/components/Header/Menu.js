@@ -9,17 +9,17 @@ const Menu = () => (
         </NavLink>
       </li>
       <li>
-        <NavLink className="link" activeClassName="active" to="/Standings">
+        <NavLink className="link" activeClassName="active" to="/standings">
           Standings
         </NavLink>
       </li>
       <li>
-        <NavLink className="link" activeClassName="active" to="/Fixtures">
+        <NavLink className="link" activeClassName="active" to="/fixtures">
           Fixtures
         </NavLink>
       </li>
       <li>
-        <NavLink className="link" activeClassName="active" to="/Scorers">
+        <NavLink className="link" activeClassName="active" to="/scorers">
           Scorers
         </NavLink>
       </li>

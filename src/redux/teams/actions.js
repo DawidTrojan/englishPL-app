@@ -24,13 +24,13 @@ export const fetchedTeamsError = payload => {
 
 export const getTeams = () => dispatch => {
   dispatch(startFetchingTeams());
-  const url = "http://api.football-data.org//v2/competitions/2021";
+  const url = "http://api.football-data.org//v2/competitions/2021/teams";
   fetch(url, {
     headers: {
       "X-Auth-Token": "408aa47e157148eca4dd2d77436dff81"
     }
   })
     .then(response => response.json())
-    .then(response => response.seasons)
-    .then(seasons => dispatch(fetchedTeams(seasons)));
+    .then(response => response.teams)
+    .then(teams => dispatch(fetchedTeams(teams)));
 };
