@@ -18,11 +18,11 @@ const Main = ({ teams: { teams }, getInfoTeams, loading }) => {
       <Row className="justify-content-center">
         {teams.map(el => (
           <Col
-            data-aos="zoom-in"
             key={el.id}
             xs="12"
             lg="5"
             className="main_info_box"
+            data-aos="zoom-in"
           >
             <div className="main_box_photo">
               <img src={el.crestUrl} alt={el.name} />
@@ -34,9 +34,11 @@ const Main = ({ teams: { teams }, getInfoTeams, loading }) => {
               <h3>
                 Short name: <span>{el.shortName}</span>
               </h3>
-              <h3>
-                Founded: <span>{el.founded}</span>
-              </h3>
+              {el.founded === null ? null : (
+                <h3>
+                  Founded: <span>{el.founded}</span>
+                </h3>
+              )}
               <h3>
                 Stadium: <span>{el.venue}</span>
               </h3>
@@ -51,6 +53,6 @@ const Main = ({ teams: { teams }, getInfoTeams, loading }) => {
   );
 };
 
-export default Main;
-
 AOS.init();
+
+export default Main;
