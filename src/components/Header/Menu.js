@@ -23,6 +23,11 @@ const Menu = () => (
           Scorers
         </NavLink>
       </li>
+      <li>
+        <NavLink className="link" activeClassName="active" to="/players">
+          Players
+        </NavLink>
+      </li>
     </ul>
   </nav>
 );

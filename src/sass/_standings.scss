@@ -13,7 +13,7 @@
   td {
     padding: 0.5rem 1.3rem;
     text-align: center;
-    border-bottom: solid $table-title-color 1px;
+    border-bottom: solid #efefef 1px;
   }
   .team-header {
     padding: 0.3rem 1.2rem;
@@ -34,34 +34,13 @@
   }
 
   .table_positions {
-    background: $table-third-color;
-    &:nth-of-type(3) {
-      background: $table-first-color;
-    }
-    &:nth-of-type(4) {
-      background: $table-second-color;
-    }
-    &:nth-of-type(5) {
-      background: $table-second-color;
-    }
-    &:nth-of-type(6) {
-      background: $table-second-color;
-    }
-
-    &:nth-of-type(20) {
-      background: $table-fourth-color;
-    }
-
-    &:nth-of-type(21) {
-      background: $table-fourth-color;
-    }
-    &:nth-of-type(22) {
-      background: $table-fourth-color;
-    }
+    color: #242424;
   }
 
   .table_description {
-    background: $table-title-color;
+    background: #fbfbfb;
+    color: #aeaeae;
+    font-size: 0.8rem;
   }
 }
 

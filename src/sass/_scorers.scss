@@ -6,7 +6,7 @@
   td {
     padding: 0.5rem 1.3rem;
     text-align: center;
-    border-bottom: solid $table-title-color 1px;
+    border-bottom: solid #efefef 1px;
   }
   .scorers-header {
     padding: 0.3rem 1.3rem;
@@ -21,19 +21,13 @@
   }
 
   .scorers_description {
-    background: $table-title-color;
-  }
-
-  .scorers_title {
-    background: $table-title-color;
-    th {
-      font-size: 1.5rem;
-      padding: 0.2rem;
-    }
+    background: #fbfbfb;
+    color: #aeaeae;
+    font-size: 0.8rem;
   }
 
   .scorers_positions {
-    background: $table-fourth-color;
+    color: #242424;
   }
 }
 

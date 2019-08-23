@@ -6,17 +6,19 @@
   td {
     padding: 0.5rem 2rem;
     text-align: center;
-    border-bottom: solid $table-title-color 1px;
+    border-bottom: solid #efefef 1px;
   }
   .fixtures_description {
-    background: $table-title-color;
+    background: #fbfbfb;
+    color: #aeaeae;
+    font-size: 0.8rem;
   }
   th {
     text-align: center;
   }
 
   .fixtures_positions {
-    background: $table-fourth-color;
+    color: #242424;
   }
 }
 
@@ -27,4 +29,17 @@
   align-items: center;
 
   margin-top: 6rem;
+}
+
+.fixtures_result_home {
+  background: #37003c;
+  color: #ffffff;
+  padding: 0 0.7rem;
+  border-right: 1px solid #ffffff;
+}
+
+.fixtures_result_away {
+  background: #37003c;
+  color: #ffffff;
+  padding: 0 0.7rem;
 }
