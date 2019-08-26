@@ -17,3 +17,16 @@
   box-sizing: border-box;
   font-family: "Space Mono", monospace;
 }
+
+form {
+  padding: 1.5rem;
+  margin: 5rem 0;
+
+  button {
+    margin: 1rem 0;
+  }
+
+  h5 {
+    margin: 1rem 0;
+  }
+}

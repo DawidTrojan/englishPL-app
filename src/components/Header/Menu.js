@@ -1,13 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import SignInLinks from "./SignedInLinks";
+import SignOutLinks from "./SignedOutLinks";
+
 const Menu = () => (
   <nav className="header_nav">
     <ul className="header_nav_list">
-      <li>
-        <NavLink className="link" activeClassName="active" to="/">
-          Home
-        </NavLink>
-      </li>
       <li>
         <NavLink className="link" activeClassName="active" to="/standings">
           Standings
@@ -28,6 +26,8 @@ const Menu = () => (
           Players
         </NavLink>
       </li>
+      <SignInLinks />
+      <SignOutLinks />
     </ul>
   </nav>
 );
