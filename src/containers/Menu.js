@@ -3,7 +3,8 @@ import Menu from "../components/Header/Menu";
 
 const mapState = state => {
   return {
-    auth: state.firebaseReducer.auth
+    auth: state.firebaseReducer.auth,
+    profile: state.firebaseReducer.profile
   };
 };
 

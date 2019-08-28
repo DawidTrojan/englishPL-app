@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const Main = ({ teams: { teams }, getInfoTeams, loading, auth }) => {
+const Main = ({ teams: { teams }, getInfoTeams, loading }) => {
   useEffect(() => {
     getInfoTeams();
   }, [getInfoTeams]);
@@ -14,7 +14,6 @@ const Main = ({ teams: { teams }, getInfoTeams, loading, auth }) => {
       <div className="main_image">
         <img src={image} alt="" />
       </div>
-
       <Row className="justify-content-center">
         {teams.map(el => (
           <Col

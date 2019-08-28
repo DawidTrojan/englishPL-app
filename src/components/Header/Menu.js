@@ -3,9 +3,9 @@ import { NavLink } from "react-router-dom";
 import SignInLinks from "../../containers/SignedInLinks";
 import SignOutLinks from "./SignedOutLinks";
 
-const Menu = ({ auth }) => {
+const Menu = ({ auth, profile }) => {
   const links = auth.uid ? (
-    <SignInLinks></SignInLinks>
+    <SignInLinks profile={profile}></SignInLinks>
   ) : (
     <SignOutLinks></SignOutLinks>
   );

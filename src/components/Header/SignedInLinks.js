@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const SignedInLinks = ({ signOut }) => {
+const SignedInLinks = ({ signOut, profile }) => {
   return (
     <>
       <li>
@@ -24,7 +24,7 @@ const SignedInLinks = ({ signOut }) => {
       </li>
       <li>
         <NavLink className="link" to="/">
-          <button>Show</button>
+          <button>Witaj! {profile.initials}</button>
         </NavLink>
       </li>
     </>
