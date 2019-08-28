@@ -29,4 +29,10 @@ form {
   h5 {
     margin: 1rem 0;
   }
+
+  .login_error {
+    p {
+      color: red;
+    }
+  }
 }

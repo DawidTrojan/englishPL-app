@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "./Logo";
-import Menu from "./Menu";
+import Menu from "../../containers/Menu";
 import { Container, Row } from "react-bootstrap";
 
 const Header = () => (

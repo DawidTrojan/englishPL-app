@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
+import { Redirect } from "react-router-dom";
 
-const SignIn = () => {
-  const [signUp, setSignUp] = useState({
+const SignUp = ({ auth, signUp, authError, authSuccess }) => {
+  const [register, setRegister] = useState({
     email: "",
     password: "",
     firstName: "",
@@ -10,16 +11,18 @@ const SignIn = () => {
   });
 
   const handleOnChange = e => {
-    setSignUp({
-      ...signUp,
+    setRegister({
+      ...register,
       [e.target.id]: e.target.value
     });
   };
 
   const handleOnSubmit = e => {
     e.preventDefault();
-    console.log(signUp);
+    signUp(register);
   };
+
+  if (auth.uid) return <Redirect to="/" />;
 
   return (
     <Form onSubmit={handleOnSubmit}>
@@ -59,8 +62,11 @@ const SignIn = () => {
       <Button variant="primary" type="submit">
         SignUp
       </Button>
+      <div className="login_error">
+        {authError ? <p>{authError}</p> : <p>{authSuccess}</p>}
+      </div>
     </Form>
   );
 };
 
-export default SignIn;
+export default SignUp;

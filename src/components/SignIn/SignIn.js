@@ -1,23 +1,26 @@
 import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
+import { Redirect } from "react-router-dom";
 
-const SignIn = () => {
-  const [signIn, setSignIn] = useState({
+const SignIn = ({ signIn, authError, authSuccess, auth }) => {
+  const [sign, setSignIn] = useState({
     email: "",
     password: ""
   });
 
   const handleOnChange = e => {
     setSignIn({
-      ...signIn,
+      ...sign,
       [e.target.id]: e.target.value
     });
   };
 
   const handleOnSubmit = e => {
     e.preventDefault();
-    console.log(signIn);
+    signIn(sign.email, sign.password);
   };
+
+  if (auth.uid) return <Redirect to="/" />;
 
   return (
     <Form onSubmit={handleOnSubmit}>
@@ -41,6 +44,9 @@ const SignIn = () => {
       <Button variant="primary" type="submit">
         Login
       </Button>
+      <div className="login_error">
+        {authError ? <p>{authError}</p> : <p>{authSuccess}</p>}
+      </div>
     </Form>
   );
 };

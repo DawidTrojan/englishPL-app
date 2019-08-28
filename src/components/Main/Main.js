@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const Main = ({ teams: { teams }, getInfoTeams, loading }) => {
+const Main = ({ teams: { teams }, getInfoTeams, loading, auth }) => {
   useEffect(() => {
     getInfoTeams();
   }, [getInfoTeams]);
@@ -19,6 +19,7 @@ const Main = ({ teams: { teams }, getInfoTeams, loading }) => {
         {teams.map(el => (
           <Col
             key={el.id}
+            id={el.id}
             xs="12"
             lg="5"
             className="main_info_box"

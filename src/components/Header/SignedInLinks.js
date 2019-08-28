@@ -1,16 +1,24 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const SignedInLinks = () => {
+const SignedInLinks = ({ signOut }) => {
   return (
     <>
       <li>
-        <NavLink className="link" to="/">
+        <a
+          href="/"
+          style={{
+            color: "white",
+            cursor: "pointer",
+            textTransform: "uppercase"
+          }}
+          onClick={signOut}
+        >
           Log Out
-        </NavLink>
+        </a>
       </li>
       <li>
-        <NavLink className="link" to="/">
+        <NavLink className="link" to="/favourites">
           Favourites
         </NavLink>
       </li>

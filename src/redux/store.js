@@ -14,7 +14,10 @@ const store = createStore(
       logger
     ),
     reduxFirestore(firebase),
-    reactReduxFirebase(firebase)
+    reactReduxFirebase(firebase, {
+      attachAuthIsReady: true,
+      firebaseStateName: "firebaseReducer"
+    })
   )
 );
 
