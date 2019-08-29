@@ -2,5 +2,9 @@ header {
   color: #360037;
   max-height: 6rem;
   width: 100%;
-  background: #37003c;
+  background: #0f0736;
+
+  @media (max-width: 575px) {
+    padding: 0 1rem;
+  }
 }

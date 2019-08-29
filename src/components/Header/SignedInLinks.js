@@ -23,9 +23,9 @@ const SignedInLinks = ({ signOut, profile }) => {
         </NavLink>
       </li>
       <li>
-        <NavLink className="link" to="/">
-          <button>Witaj! {profile.initials}</button>
-        </NavLink>
+        <div className="user_greeting_box">
+          <span>Hello! {profile.initials}</span>
+        </div>
       </li>
     </>
   );

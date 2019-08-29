@@ -11,15 +11,17 @@ const Main = ({ teams: { teams }, getInfoTeams, loading }) => {
 
   return (
     <Container>
-      <div className="main_image">
+      <Row className="main_image justify-content-center">
         <img src={image} alt="" />
-      </div>
+      </Row>
+
       <Row className="justify-content-center">
         {teams.map(el => (
           <Col
             key={el.id}
             id={el.id}
             xs="12"
+            md="10"
             lg="5"
             className="main_info_box"
             data-aos="zoom-in"

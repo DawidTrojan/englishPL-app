@@ -1,19 +1,24 @@
 @import "colors";
+// large
 
 .table_container {
   margin-bottom: 2rem;
   height: 100vh;
   margin: 6rem 0;
+
+  @media (max-width: 830px) {
+    display: none;
+  }
 }
 
-.premier_league {
-  color: #ffffff;
+.premier_league_lg {
+  color: $font-white-color;
   white-space: nowrap;
   overflow: hidden;
   td {
     padding: 0.5rem 1.3rem;
     text-align: center;
-    border-bottom: solid #efefef 1px;
+    border-bottom: solid $font-white-color 1px;
   }
   .team-header {
     padding: 0.3rem 1.2rem;
@@ -34,12 +39,12 @@
   }
 
   .table_positions {
-    color: #242424;
+    color: $font-white-color;
   }
 
   .table_description {
-    background: #fbfbfb;
-    color: #aeaeae;
+    background: #0f0736;
+    color: $font-white-color;
     font-size: 0.8rem;
   }
 }
@@ -48,4 +53,38 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+// xs
+
+.table_container_xs {
+  margin-bottom: 2rem;
+  margin: 6rem 0;
+  height: 100%;
+  display: none;
+  color: $font-white-color;
+  font-size: 0.9rem;
+  white-space: nowrap;
+
+  td {
+    padding: 0.2rem 0.2rem;
+    text-align: center;
+    border-bottom: solid $font-white-color 1px;
+  }
+  .team {
+    text-align: left;
+  }
+  th {
+    text-align: center;
+    padding-left: 0.1rem;
+  }
+
+  img {
+    width: 0.7rem;
+    height: 0.7rem;
+    margin-right: 0.3rem;
+  }
+  @media (max-width: 830px) {
+    display: block;
+  }
 }

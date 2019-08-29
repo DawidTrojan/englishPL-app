@@ -8,10 +8,8 @@ const Standings = ({ standings: { standings }, getStandings, loading }) => {
   }, [getStandings]);
 
   return (
-    <Container>
-      <div className="standings_container">
-        <Table standings={standings} />
-      </div>
+    <Container className="standings_container">
+      <Table standings={standings} />
     </Container>
   );
 };
