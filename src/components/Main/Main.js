@@ -14,7 +14,6 @@ const Main = ({ teams: { teams }, getInfoTeams, loading }) => {
       <Row className="main_image justify-content-center">
         <img src={image} alt="" />
       </Row>
-
       <Row className="justify-content-center">
         {teams.map(el => (
           <Col
