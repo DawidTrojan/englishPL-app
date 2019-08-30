@@ -8,11 +8,9 @@ const Scorers = ({ scorers: { scorers }, getScorers, loading }) => {
   }, [getScorers]);
 
   return (
-    <Container>
-      <div className="scorers_container">
-        <h2>Statistics of the league's top scorers</h2>
-        <Table scorers={scorers} />
-      </div>
+    <Container className="scorers_container">
+      <h2>Statistics of the league's top scorers</h2>
+      <Table scorers={scorers} />
     </Container>
   );
 };

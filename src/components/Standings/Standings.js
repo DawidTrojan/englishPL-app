@@ -9,6 +9,7 @@ const Standings = ({ standings: { standings }, getStandings, loading }) => {
 
   return (
     <Container className="standings_container">
+      <h2>Premier League standings 2019/2020</h2>
       <Table standings={standings} />
     </Container>
   );

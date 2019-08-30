@@ -12,7 +12,7 @@ const Fixtures = ({ fixtures: { fixtures }, getFixtures, loading }) => {
     getFixtures(e.target.value);
   };
   return (
-    <Container className="fixtures_select">
+    <Container className="fixtures_container">
       <h2>Select matchday to check matches and live results </h2>
       <Select changeList={handleOnChange} />
       <Table fixtures={fixtures} />

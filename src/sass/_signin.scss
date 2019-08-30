@@ -1,33 +1,33 @@
 @import "colors";
 
-.signup_form {
+.signin_form {
   color: $font-white-color;
   margin: 5rem 0;
 
   h2 {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
   }
 
-  .form_control_signup {
+  .form_control_signin {
     &:focus {
       border: solid $border-color 3px;
     }
   }
 
-  .signup_group {
+  .signin_group {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .signup_button_container {
+  .signin_button_container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 3rem;
 
-    .signup_button {
+    .signin_button {
       background: $main-color;
       padding: 0.5rem 1.5rem;
 

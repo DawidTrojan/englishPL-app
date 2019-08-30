@@ -1,3 +1,5 @@
+@import "colors";
+
 .header_nav {
   .header_nav_list {
     min-width: 20rem;
@@ -18,24 +20,24 @@
     display: none;
   }
 }
-
 .active {
-  color: red;
+  border-bottom: 2px solid $border-color;
+  padding-bottom: 0.2rem;
+  width: 100%;
 }
-
 .link {
-  color: #ffffff;
+  color: $font-white-color;
   font-size: 0.9rem;
   text-transform: uppercase;
 
   &:hover {
+    color: darken($font-white-color, 50%);
     text-decoration: none;
-    color: darken(#fff, 20%);
   }
 }
 
 .user_greeting_box {
-  background: #716aec;
+  background: $border-color;
   border-radius: 50px;
 
   @media (max-width: 991px) {
@@ -49,7 +51,7 @@
 
     @media (max-width: 991px) {
       padding: 0;
-      color: red;
+      color: $font-white-color;
     }
   }
 }
@@ -74,13 +76,12 @@
 
 .toggle_nav {
   width: 50%;
-  height: 30%;
   margin-bottom: 0.5rem;
   position: absolute;
   top: 80px;
   left: 0;
-  background: #0f0736;
-  opacity: 0.7;
+  background: $main-color;
+  opacity: 0.9;
   border-radius: 3px;
   z-index: 2;
 
@@ -95,5 +96,31 @@
 
   @media (min-width: 992px) {
     display: none;
+  }
+
+  .auth_link {
+    color: $font-white-color;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    border: 1px solid $border-color;
+    padding: 0.1rem 0.2rem;
+
+    &:hover {
+      color: darken($font-white-color, 50%);
+      text-decoration: none;
+    }
+  }
+}
+
+.auth_link {
+  color: $font-white-color;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  border: 1px solid $border-color;
+  padding: 0.5rem 0.7rem;
+
+  &:hover {
+    color: darken($font-white-color, 50%);
+    text-decoration: none;
   }
 }

@@ -5,7 +5,13 @@ const SignedInLinks = ({ signOut, profile }) => {
   return (
     <>
       <li>
+        <div className="user_greeting_box">
+          <span>Hello! {profile.initials}</span>
+        </div>
+      </li>
+      <li>
         <a
+          className="auth_link"
           href="/"
           style={{
             color: "white",
@@ -18,14 +24,9 @@ const SignedInLinks = ({ signOut, profile }) => {
         </a>
       </li>
       <li>
-        <NavLink className="link" to="/favourites">
+        <NavLink className="auth_link" to="/favourites">
           Favourites
         </NavLink>
-      </li>
-      <li>
-        <div className="user_greeting_box">
-          <span>Hello! {profile.initials}</span>
-        </div>
       </li>
     </>
   );

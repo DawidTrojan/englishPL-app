@@ -10,6 +10,7 @@
 @import "teams";
 @import "players";
 @import "signup";
+@import "signin";
 
 * {
   margin: 0;
@@ -17,26 +18,15 @@
   box-sizing: border-box;
   font-family: "Space Mono", monospace;
 }
-
-body {
-  background: #06011d;
+html {
+  height: 100%;
 }
 
-form {
-  padding: 1.5rem;
-  margin: 5rem 0;
-
-  button {
-    margin: 1rem 0;
-  }
-
-  h5 {
-    margin: 1rem 0;
-  }
-
-  .login_error {
-    p {
-      color: red;
-    }
-  }
+#root {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  background: $body-background;
+  position: relative;
 }
