@@ -10,6 +10,7 @@ const Scorers = ({ scorers: { scorers }, getScorers, loading }) => {
   return (
     <Container>
       <div className="scorers_container">
+        <h2>Statistics of the league's top scorers</h2>
         <Table scorers={scorers} />
       </div>
     </Container>

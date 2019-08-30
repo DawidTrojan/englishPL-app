@@ -1,3 +1,5 @@
+@import "colors";
+
 .main_image {
   height: 80%;
   width: 100%;
@@ -20,11 +22,12 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  background: #0f0736;
+  background: $main-color;
   color: #ffffff;
   height: 15rem;
   padding: 4rem 1.5rem;
   margin: 0.9rem 0.9rem;
+  border: solid $border-color 1px;
   box-shadow: 0 1px 3px rgba(224, 217, 217, 0.12),
     0 1px 2px rgba(224, 217, 217, 0.2);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);

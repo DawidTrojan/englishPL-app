@@ -10,7 +10,9 @@ const List = ({ playersList }) => (
         className="players_box"
         key={player.id}
         lg="3"
-        xs="12"
+        md="5"
+        sm="9"
+        xs="10"
         data-aos="zoom-in"
       >
         <div className="players_content_box">

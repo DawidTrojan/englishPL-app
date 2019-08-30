@@ -1,24 +1,36 @@
 @import "colors";
 
 .fixtures {
-  color: #ffffff;
+  color: $font-white-color;
   margin-bottom: 6rem;
   td {
     padding: 0.5rem 2rem;
     text-align: center;
-    border-bottom: solid #efefef 1px;
+    border-bottom: solid $border-color 1px;
+
+    @media (max-width: 685px) {
+      padding: 0.1rem 0.1rem;
+    }
   }
   .fixtures_description {
-    background: #fbfbfb;
-    color: #aeaeae;
+    background: $main-color;
+    color: $font-white-color;
     font-size: 0.8rem;
   }
   th {
     text-align: center;
   }
 
-  .fixtures_positions {
-    color: #242424;
+  @media (max-width: 1199px) {
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 685px) {
+    font-size: 0.8rem;
+  }
+
+  @media (max-width: 447px) {
+    font-size: 0.7rem;
   }
 }
 
@@ -27,19 +39,39 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  text-align: center;
   margin-top: 6rem;
+
+  h2 {
+    color: $font-white-color;
+    text-align: center;
+
+    @media (max-width: 685px) {
+      font-size: 1.2rem;
+    }
+  }
 }
 
 .fixtures_result_home {
-  background: #37003c;
+  background: $main-color;
   color: #ffffff;
   padding: 0 0.7rem;
-  border-right: 1px solid #ffffff;
+  border-right: 1px solid $font-white-color;
 }
 
 .fixtures_result_away {
-  background: #37003c;
-  color: #ffffff;
+  background: $main-color;
+  color: $font-white-color;
   padding: 0 0.7rem;
+}
+
+.fixtures_form {
+  border: solid $border-color 2px;
+  background: $main-color;
+  color: $font-white-color;
+
+  &:focus {
+    background: $main-color;
+    color: $font-white-color;
+  }
 }

@@ -1,8 +1,9 @@
+@import "colors";
+
 header {
-  color: #360037;
   max-height: 6rem;
   width: 100%;
-  background: #0f0736;
+  background: $main-color;
 
   @media (max-width: 575px) {
     padding: 0 1rem;

@@ -1,8 +1,10 @@
+@import "colors";
+
 footer {
-  background: #0f0736;
-  min-height: 80px;
+  background: $main-color;
+  min-height: 5rem;
   width: 100%;
-  color: #ffffff;
+  color: $font-white-color;
 
   display: flex;
   justify-content: center;

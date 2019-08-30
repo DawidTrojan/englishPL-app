@@ -1,39 +1,65 @@
 @import "colors";
 
 .scorers {
-  color: #ffffff;
+  color: $font-white-color;
 
   td {
     padding: 0.5rem 1.3rem;
     text-align: center;
-    border-bottom: solid #efefef 1px;
+    border-bottom: solid $border-color 1px;
+
+    @media (max-width: 685px) {
+      padding: 0.1rem 0.1rem;
+    }
   }
-  .scorers-header {
-    padding: 0.3rem 1.3rem;
-    text-align: left;
-  }
-  th {
-    text-align: center;
+  @media (max-width: 1199px) {
+    font-size: 0.9rem;
   }
 
-  .team {
-    text-align: left;
-  }
-
-  .scorers_description {
-    background: #fbfbfb;
-    color: #aeaeae;
+  @media (max-width: 685px) {
     font-size: 0.8rem;
   }
 
-  .scorers_positions {
-    color: #242424;
+  @media (max-width: 447px) {
+    font-size: 0.7rem;
   }
+
+  @media (max-width: 320px) {
+    font-size: 0.6rem;
+  }
+}
+
+.scorers-header {
+  padding: 0.3rem 1.3rem;
+  text-align: left;
+}
+th {
+  text-align: center;
+}
+
+.team {
+  text-align: left;
+}
+
+.scorers_description {
+  background: $main-color;
+  color: $font-white-color;
+  font-size: 0.8rem;
 }
 
 .scorers_container {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   margin: 6rem 0;
+
+  h2 {
+    color: $font-white-color;
+    text-align: center;
+
+    @media (max-width: 685px) {
+      font-size: 1.2rem;
+    }
+  }
 }
