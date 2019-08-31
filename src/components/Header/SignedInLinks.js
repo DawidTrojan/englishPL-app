@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const SignedInLinks = ({ signOut, profile }) => {
+const SignedInLinks = ({ signOut, profile, closeMenu }) => {
   return (
     <>
       <li>
@@ -24,7 +24,7 @@ const SignedInLinks = ({ signOut, profile }) => {
         </a>
       </li>
       <li>
-        <NavLink className="auth_link" to="/favourites">
+        <NavLink onClick={closeMenu} className="auth_link" to="/favourites">
           Favourites
         </NavLink>
       </li>

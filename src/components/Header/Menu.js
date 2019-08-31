@@ -7,32 +7,39 @@ const Menu = ({ auth, profile }) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
 
+  const hide = e => {
+    if (e && e.relatedTarget) {
+      e.relatedTarget.click();
+    }
+    setIsOpen(false);
+  };
+
   const links = auth.uid ? (
-    <SignInLinks profile={profile}></SignInLinks>
+    <SignInLinks profile={profile} closeMenu={hide}></SignInLinks>
   ) : (
-    <SignOutLinks></SignOutLinks>
+    <SignOutLinks closeMenu={hide}></SignOutLinks>
   );
 
   return (
     <>
       <nav className={isOpen ? "toggle_nav" : "header_nav"}>
         <ul className={isOpen ? "toggle_nav_list" : "header_nav_list"}>
-          <li>
+          <li onClick={hide}>
             <NavLink className="link" activeClassName="active" to="/standings">
               Standings
             </NavLink>
           </li>
-          <li>
+          <li onClick={hide}>
             <NavLink className="link" activeClassName="active" to="/fixtures">
               Fixtures
             </NavLink>
           </li>
-          <li>
+          <li onClick={hide}>
             <NavLink className="link" activeClassName="active" to="/scorers">
               Scorers
             </NavLink>
           </li>
-          <li>
+          <li onClick={hide}>
             <NavLink className="link" activeClassName="active" to="/players">
               Players
             </NavLink>

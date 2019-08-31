@@ -16,6 +16,7 @@
       padding: 0 0.7rem;
     }
   }
+
   @media (max-width: 991px) {
     display: none;
   }
@@ -25,6 +26,7 @@
   padding-bottom: 0.2rem;
   width: 100%;
 }
+
 .link {
   color: $font-white-color;
   font-size: 0.9rem;
@@ -97,19 +99,6 @@
   @media (min-width: 992px) {
     display: none;
   }
-
-  .auth_link {
-    color: $font-white-color;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    border: 1px solid $border-color;
-    padding: 0.1rem 0.2rem;
-
-    &:hover {
-      color: darken($font-white-color, 50%);
-      text-decoration: none;
-    }
-  }
 }
 
 .auth_link {
@@ -117,7 +106,7 @@
   font-size: 0.9rem;
   text-transform: uppercase;
   border: 1px solid $border-color;
-  padding: 0.5rem 0.7rem;
+  padding: 0.1rem 0.5rem;
 
   &:hover {
     color: darken($font-white-color, 50%);
