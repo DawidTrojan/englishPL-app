@@ -1,3 +1,4 @@
+export const START_LOG_IN = "[start-login] Starting login";
 export const LOG_IN = "[login] Login Success";
 export const LOG_IN_ERROR = "[login-error] Login Error";
 
@@ -13,6 +14,9 @@ export const signIn = (email, password) => {
     firebase
       .auth()
       .signInWithEmailAndPassword(email, password)
+      .then(() => {
+        dispatch({ type: START_LOG_IN });
+      })
       .then(() => {
         dispatch({ type: LOG_IN });
       })

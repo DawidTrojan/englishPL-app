@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import { Redirect } from "react-router-dom";
 import { Container, Col } from "react-bootstrap";
+import Loading from "./Loading";
 
-const SignIn = ({ signIn, authError, authSuccess, auth }) => {
+const SignIn = ({ signIn, authError, authSuccess, auth, authLoading }) => {
   const [sign, setSignIn] = useState({
     email: "",
     password: ""
@@ -22,6 +23,9 @@ const SignIn = ({ signIn, authError, authSuccess, auth }) => {
   };
 
   if (auth.uid) return <Redirect to="/" />;
+  if (authSuccess === 0) {
+    return <Loading></Loading>;
+  }
 
   return (
     <Container className="signin_form_container">

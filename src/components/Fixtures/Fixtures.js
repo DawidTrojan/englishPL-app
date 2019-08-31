@@ -13,9 +13,15 @@ const Fixtures = ({ fixtures: { fixtures }, getFixtures, loading }) => {
   };
   return (
     <Container className="fixtures_container">
-      <h2>Select matchday to check matches and live results </h2>
-      <Select changeList={handleOnChange} />
-      <Table fixtures={fixtures} />
+      {fixtures.length === 0 ? (
+        <h1>Loading...</h1>
+      ) : (
+        <>
+          <h2>Select matchday to check matches and live results </h2>
+          <Select changeList={handleOnChange} />
+          <Table fixtures={fixtures} />
+        </>
+      )}
     </Container>
   );
 };

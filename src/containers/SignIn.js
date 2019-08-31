@@ -6,6 +6,7 @@ const mapState = state => {
   return {
     authError: state.authReducer.authError,
     authSuccess: state.authReducer.authSuccess,
+    authLoading: state.authReducer.authLoading,
     auth: state.firebaseReducer.auth
   };
 };

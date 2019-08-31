@@ -1,4 +1,5 @@
 import {
+  START_LOG_IN,
   LOG_IN,
   LOG_IN_ERROR,
   SIGN_OUT,
@@ -8,16 +9,23 @@ import {
 
 const initState = {
   authError: null,
-  authSuccess: null
+  authSuccess: null,
+  authLoading: false
 };
 
 export const authReducer = (state = initState, action) => {
   switch (action.type) {
+    case START_LOG_IN:
+      return {
+        ...state,
+        authLoading: true
+      };
     case LOG_IN:
       return {
         ...state,
         authError: null,
-        authSuccess: "Login Success"
+        authSuccess: "Login Success",
+        authLoading: false
       };
 
     case LOG_IN_ERROR:
