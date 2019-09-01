@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import { Redirect } from "react-router-dom";
 import { Container, Col } from "react-bootstrap";
+import Options from "./Options";
 
 const SignUp = ({ auth, signUp, authError, authSuccess }) => {
   const [register, setRegister] = useState({
     email: "",
     password: "",
     firstName: "",
-    lastName: ""
+    myTeam: ""
   });
 
   const handleOnChange = e => {
@@ -71,6 +72,18 @@ const SignUp = ({ auth, signUp, authError, authSuccess }) => {
               placeholder="Last Name"
               onChange={handleOnChange}
             />
+          </Col>
+        </Form.Group>
+        <Form.Group controlId="myTeam" className="signup_group">
+          <Col xl="5" lg="6" md="9">
+            <Form.Label>My team</Form.Label>
+            <Form.Control
+              as="select"
+              className="form-control players_form"
+              onChange={handleOnChange}
+            >
+              <Options />
+            </Form.Control>
           </Col>
         </Form.Group>
         <div className="signup_button_container">

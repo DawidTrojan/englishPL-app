@@ -54,7 +54,8 @@ export const signUp = newUser => {
           .set({
             firstName: newUser.firstName,
             lastName: newUser.lastName,
-            initials: newUser.firstName
+            initials: newUser.firstName,
+            myTeam: newUser.myTeam
           });
       })
       .then(() => {

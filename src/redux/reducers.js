@@ -5,6 +5,7 @@ import { fixtures } from "./fixtures/reducers";
 import { teams } from "./teams/reducers";
 import { infoTeams } from "./main/reducers";
 import { squad } from "./players/reducers";
+import { favourites } from "./favourites/reducers";
 import { firebaseReducer } from "react-redux-firebase";
 import { authReducer } from "./auth/reducers";
 
@@ -16,5 +17,6 @@ export default combineReducers({
   infoTeams,
   squad,
   firebaseReducer,
-  authReducer
+  authReducer,
+  favourites
 });
