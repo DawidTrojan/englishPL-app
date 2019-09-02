@@ -3,8 +3,7 @@ import Standings from "../components/Standings";
 import { getStandings } from "../redux/standings/actions";
 
 const mapState = state => ({
-  standings: state.standings,
-  loading: state.loading
+  standings: state.standings
 });
 
 const mapDispatch = dispatch => {

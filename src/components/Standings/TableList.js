@@ -4,19 +4,19 @@ const TableList = ({ standingsList }) => (
   <>
     {standingsList.map(el =>
       el.table.map(el => (
-        <tr className="table_positions" key={el.position}>
-          <td className="position">{el.position}.</td>
-          <td className="team">
+        <tr className="table_list__positions" key={el.position}>
+          <td>{el.position}.</td>
+          <td className="table_list__team">
             <img src={el.team.crestUrl} alt="Logo" />
             {el.team.name}
           </td>
-          <td className="played">{el.playedGames}</td>
-          <td className="won">{el.won}</td>
-          <td className="draw">{el.draw}</td>
-          <td className="lost">{el.lost}</td>
-          <td className="goalsFor">{el.goalsFor}</td>
-          <td className="goalsAgainst">{el.goalsAgainst}</td>
-          <td className="points">{el.points}</td>
+          <td>{el.playedGames}</td>
+          <td>{el.won}</td>
+          <td>{el.draw}</td>
+          <td>{el.lost}</td>
+          <td>{el.goalsFor}</td>
+          <td>{el.goalsAgainst}</td>
+          <td>{el.points}</td>
         </tr>
       ))
     )}

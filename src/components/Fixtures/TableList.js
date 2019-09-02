@@ -1,9 +1,9 @@
 import React from "react";
 
-const TableList = ({ fixturesList }) => (
+const TableList = ({ fixturesContent }) => (
   <>
-    {fixturesList.map(match => (
-      <tr className="fixtures_positions" key={match.id}>
+    {fixturesContent.map(match => (
+      <tr key={match.id}>
         <td>{match.homeTeam.name} </td>
         <td>
           <span className="fixtures_result_home">

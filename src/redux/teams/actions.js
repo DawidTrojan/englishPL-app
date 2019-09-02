@@ -32,5 +32,8 @@ export const getTeams = () => dispatch => {
   })
     .then(response => response.json())
     .then(response => response.teams)
-    .then(teams => dispatch(fetchedTeams(teams)));
+    .then(teams => dispatch(fetchedTeams(teams)))
+    .catch(error => {
+      dispatch(fetchedTeamsError(error));
+    });
 };

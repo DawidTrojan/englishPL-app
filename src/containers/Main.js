@@ -3,8 +3,7 @@ import Main from "../components/Main";
 import { getInfoTeams } from "../redux/main/actions";
 
 const mapState = state => ({
-  teams: state.teams,
-  loading: state.loading
+  teams: state.teams
 });
 
 const mapDispatch = dispatch => {

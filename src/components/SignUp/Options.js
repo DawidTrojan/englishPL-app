@@ -2,6 +2,9 @@ import React from "react";
 
 const Options = () => (
   <>
+    <option value="-1" disabled>
+      Select a team
+    </option>
     <option value="57">Arsenal</option>
     <option value="58">Aston Villa</option>
     <option value="1044">Bournemouth</option>

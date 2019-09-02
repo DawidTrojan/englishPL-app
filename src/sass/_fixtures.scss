@@ -28,8 +28,9 @@
   }
 }
 
-.fixtures {
+.fixtures_table {
   color: $font-white-color;
+  background: $second-color;
   td {
     padding: 0.5rem 2rem;
     text-align: center;
@@ -39,7 +40,7 @@
       padding: 0.1rem 0.1rem;
     }
   }
-  .fixtures_description {
+  .fixtures_table__header {
     background: $main-color;
     color: $font-white-color;
     font-size: 0.8rem;
@@ -82,9 +83,9 @@
   padding: 0 0.7rem;
 }
 
-.fixtures_form {
+.fixtures_select {
   border: solid $border-color 2px;
-  background: $main-color;
+  background: $second-color;
   color: $font-white-color;
   margin-bottom: 3rem;
 

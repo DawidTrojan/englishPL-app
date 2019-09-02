@@ -3,12 +3,12 @@ import TableList from "./TableList";
 
 const Table = ({ standings }) => (
   <>
-    <div className="table_container">
-      <table className="premier_league_lg">
+    <div className="table_container__large">
+      <table className="table_large">
         <thead>
-          <tr className="table_description">
+          <tr className="table_header">
             <th>Position</th>
-            <th className="team-header">Team</th>
+            <th className="table_team">Team</th>
             <th>P</th>
             <th>W</th>
             <th>D</th>
@@ -21,12 +21,12 @@ const Table = ({ standings }) => (
         </thead>
       </table>
     </div>
-    <div className="table_container_xs">
-      <table className="premier_league_xs">
+    <div className="table_container__small">
+      <table>
         <thead>
-          <tr className="table_description_xs">
+          <tr className="table_header__small">
             <th>Pos.</th>
-            <th className="team-header_xs">Team</th>
+            <th>Team</th>
             <th>P</th>
             <th>W</th>
             <th>D</th>

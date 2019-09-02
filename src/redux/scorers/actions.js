@@ -33,5 +33,8 @@ export const getScorers = () => dispatch => {
   })
     .then(response => response.json())
     .then(response => response.scorers)
-    .then(scorers => dispatch(fetchedScorers(scorers)));
+    .then(scorers => dispatch(fetchedScorers(scorers)))
+    .catch(error => {
+      dispatch(fetchedScorersError(error));
+    });
 };

@@ -33,5 +33,8 @@ export const getPlayers = id => dispatch => {
   })
     .then(response => response.json())
     .then(response => response.squad)
-    .then(squad => dispatch(fetchedPlayers(squad)));
+    .then(squad => dispatch(fetchedPlayers(squad)))
+    .catch(error => {
+      dispatch(fetchedPlayersError(error));
+    });
 };

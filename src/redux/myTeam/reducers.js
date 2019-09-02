@@ -1,30 +1,30 @@
 import {
-  FETCH_FAVOURITES,
-  FETCHED_FAVOURITES,
-  FETCHED_FAVOURITES_ERROR
+  FETCH_MY_TEAM,
+  FETCHED_MY_TEAM,
+  FETCHED_MY_TEAM_ERROR
 } from "./actions";
 
 const initState = {
   loading: false,
-  favourites: [],
+  myTeam: [],
   error: ""
 };
 
-export const favourites = (state = initState, action) => {
+export const myTeam = (state = initState, action) => {
   switch (action.type) {
-    case FETCH_FAVOURITES:
+    case FETCH_MY_TEAM:
       return {
         ...state,
         loading: true
       };
-    case FETCHED_FAVOURITES:
+    case FETCHED_MY_TEAM:
       return {
         loading: false,
-        favourites: action.payload
+        myTeam: action.payload
       };
-    case FETCHED_FAVOURITES_ERROR:
+    case FETCHED_MY_TEAM_ERROR:
       return {
-        favourites: [],
+        myTeam: [],
         loading: false,
         error: action.payload
       };

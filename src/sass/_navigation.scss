@@ -1,7 +1,7 @@
 @import "colors";
 
-.header_nav {
-  .header_nav_list {
+.navigation {
+  .navigation_list {
     min-width: 20rem;
     display: flex;
     justify-content: space-between;
@@ -35,6 +35,25 @@
   &:hover {
     color: darken($font-white-color, 50%);
     text-decoration: none;
+  }
+}
+
+.auth_link {
+  color: $font-white-color;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  border: 1px solid $border-color;
+  padding: 0.1rem 0.5rem;
+  cursor: pointer;
+
+  &:hover {
+    color: darken($font-white-color, 50%);
+    text-decoration: none;
+  }
+
+  @media (max-width: 991px) {
+    border: none;
+    font-size: 1.1rem;
   }
 }
 
@@ -77,7 +96,7 @@
 }
 
 .toggle_nav {
-  width: 50%;
+  width: 100%;
   margin-bottom: 0.5rem;
   position: absolute;
   top: 80px;
@@ -88,28 +107,25 @@
   z-index: 2;
 
   .toggle_nav_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     list-style: none;
     padding: 1.5rem;
 
+    .link {
+      font-size: 1.1rem;
+    }
+
     li {
       margin-top: 0.7rem;
+      width: 100%;
     }
   }
 
   @media (min-width: 992px) {
     display: none;
-  }
-}
-
-.auth_link {
-  color: $font-white-color;
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  border: 1px solid $border-color;
-  padding: 0.1rem 0.5rem;
-
-  &:hover {
-    color: darken($font-white-color, 50%);
-    text-decoration: none;
   }
 }

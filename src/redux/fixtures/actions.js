@@ -33,5 +33,8 @@ export const getFixtures = matchday => dispatch => {
   })
     .then(response => response.json())
     .then(response => response.matches)
-    .then(matches => dispatch(fetchedFixtures(matches)));
+    .then(matches => dispatch(fetchedFixtures(matches)))
+    .catch(error => {
+      dispatch(fetchedFixturesError(error));
+    });
 };

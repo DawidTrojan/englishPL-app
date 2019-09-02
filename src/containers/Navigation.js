@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import Menu from "../components/Header/Menu";
+import Navigation from "../components/Navigation";
 
 const mapState = state => {
   return {
@@ -8,4 +8,4 @@ const mapState = state => {
   };
 };
 
-export default connect(mapState)(Menu);
+export default connect(mapState)(Navigation);

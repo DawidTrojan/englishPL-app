@@ -1,23 +1,22 @@
 import { connect } from "react-redux";
-import Favourites from "../components/Favourites";
-import { getFavourites } from "../redux/favourites/actions";
+import MyTeam from "../components/MyTeam";
+import { getMyTeam } from "../redux/myTeam/actions";
 
 const mapState = state => {
   return {
     auth: state.firebaseReducer.auth,
     profile: state.firebaseReducer.profile,
-    teams: state.teams,
-    loading: state.loading
+    myTeam: state.myTeam
   };
 };
 
 const mapDispatch = dispatch => {
   return {
-    getFavourites: id => dispatch(getFavourites(id))
+    getMyTeam: id => dispatch(getMyTeam(id))
   };
 };
 
 export default connect(
   mapState,
   mapDispatch
-)(Favourites);
+)(MyTeam);

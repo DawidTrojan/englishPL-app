@@ -33,5 +33,8 @@ export const getStandings = () => dispatch => {
   })
     .then(response => response.json())
     .then(response => response.standings)
-    .then(standings => dispatch(fetchedStandings(standings)));
+    .then(standings => dispatch(fetchedStandings(standings)))
+    .catch(error => {
+      dispatch(fetchedStandingsError(error));
+    });
 };

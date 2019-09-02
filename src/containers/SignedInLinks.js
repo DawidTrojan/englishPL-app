@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import SignedInLinks from "../components/Header/SignedInLinks";
+import SignedInLinks from "../components/Navigation/SignedInLinks";
 import { signOut } from "../redux/auth/actions";
 
 const mapDispatch = dispatch => {

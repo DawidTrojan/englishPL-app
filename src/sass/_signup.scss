@@ -1,8 +1,23 @@
 @import "colors";
-
+.signup_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .signup_form {
   color: $font-white-color;
   margin: 5rem 0;
+  width: 50%;
+  padding-top: 1rem;
+  background: $second-color;
+  box-shadow: 0px 1px 5px rgba(177, 52, 52, 0);
+  transition: all 1.6s;
+
+  &:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: 1px 5px 14px rgba(0, 0, 0, 3);
+    z-index: 1;
+  }
 
   h2 {
     text-align: center;
@@ -37,7 +52,7 @@
     }
   }
 
-  .login_error {
+  .signup_error {
     display: flex;
     justify-content: center;
     align-items: center;

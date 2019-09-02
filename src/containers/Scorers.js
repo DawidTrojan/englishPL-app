@@ -3,8 +3,7 @@ import Scorers from "../components/Scorers";
 import { getScorers } from "../redux/scorers/actions";
 
 const mapState = state => ({
-  scorers: state.scorers,
-  loading: state.loading
+  scorers: state.scorers
 });
 
 const mapDispatch = dispatch => {

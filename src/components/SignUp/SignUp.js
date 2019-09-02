@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import { Form, Button } from "react-bootstrap";
+import SignUpForm from "./SignUpForm";
 import { Redirect } from "react-router-dom";
-import { Container, Col } from "react-bootstrap";
-import Options from "./Options";
+import { Container } from "react-bootstrap";
 
 const SignUp = ({ auth, signUp, authError, authSuccess }) => {
   const [register, setRegister] = useState({
@@ -27,74 +26,13 @@ const SignUp = ({ auth, signUp, authError, authSuccess }) => {
   if (auth.uid) return <Redirect to="/" />;
 
   return (
-    <Container>
-      <Form onSubmit={handleOnSubmit} className="signup_form">
-        <h2>Sign Up</h2>
-        <Form.Group controlId="email" className="signup_group">
-          <Col xl="5" lg="6" md="9">
-            <Form.Label>Email</Form.Label>
-            <Form.Control
-              className="form_control_signup"
-              type="email"
-              placeholder="Enter email"
-              onChange={handleOnChange}
-            />
-          </Col>
-        </Form.Group>
-        <Form.Group controlId="password" className="signup_group">
-          <Col xl="5" lg="6" md="9">
-            <Form.Label>Password</Form.Label>
-            <Form.Control
-              className="form_control_signup"
-              type="password"
-              placeholder="Password"
-              onChange={handleOnChange}
-            />
-          </Col>
-        </Form.Group>
-        <Form.Group controlId="firstName" className="signup_group">
-          <Col xl="5" lg="6" md="9">
-            <Form.Label>First Name</Form.Label>
-            <Form.Control
-              className="form_control_signup"
-              type="text"
-              placeholder="First Name"
-              onChange={handleOnChange}
-            />
-          </Col>
-        </Form.Group>
-        <Form.Group controlId="lastName" className="signup_group">
-          <Col xl="5" lg="6" md="9">
-            <Form.Label>Last Name</Form.Label>
-            <Form.Control
-              className="form_control_signup"
-              type="text"
-              placeholder="Last Name"
-              onChange={handleOnChange}
-            />
-          </Col>
-        </Form.Group>
-        <Form.Group controlId="myTeam" className="signup_group">
-          <Col xl="5" lg="6" md="9">
-            <Form.Label>My team</Form.Label>
-            <Form.Control
-              as="select"
-              className="form-control players_form"
-              onChange={handleOnChange}
-            >
-              <Options />
-            </Form.Control>
-          </Col>
-        </Form.Group>
-        <div className="signup_button_container">
-          <Button variant="primary" type="submit" className="signup_button">
-            SignUp
-          </Button>
-        </div>
-        <div className="login_error">
-          {authError ? <p>{authError}</p> : <p>{authSuccess}</p>}
-        </div>
-      </Form>
+    <Container className="signup_container">
+      <SignUpForm
+        onSubmit={handleOnSubmit}
+        onChange={handleOnChange}
+        error={authError}
+        success={authSuccess}
+      />
     </Container>
   );
 };

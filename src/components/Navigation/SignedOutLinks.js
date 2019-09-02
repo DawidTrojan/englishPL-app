@@ -6,12 +6,12 @@ const SignedOutLinks = ({ closeMenu }) => {
     <>
       <li>
         <NavLink onClick={closeMenu} className="auth_link" to="/signin">
-          Login
+          <span>Login</span>
         </NavLink>
       </li>
       <li>
         <NavLink onClick={closeMenu} className="auth_link" to="/signup">
-          Signup
+          <span>Signup</span>
         </NavLink>
       </li>
     </>

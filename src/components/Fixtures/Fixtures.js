@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
 import Select from "./Select";
 import Table from "./Table";
+import Loading from "../Loading/Loading";
 import { Container } from "react-bootstrap";
 
-const Fixtures = ({ fixtures: { fixtures }, getFixtures, loading }) => {
+const Fixtures = ({ fixtures: { fixtures }, getFixtures, error }) => {
   useEffect(() => {
     getFixtures();
   }, [getFixtures]);
@@ -14,11 +15,11 @@ const Fixtures = ({ fixtures: { fixtures }, getFixtures, loading }) => {
   return (
     <Container className="fixtures_container">
       {fixtures.length === 0 ? (
-        <h1>Loading...</h1>
+        <Loading></Loading>
       ) : (
         <>
           <h2>Select matchday to check matches and live results </h2>
-          <Select changeList={handleOnChange} />
+          <Select changeOption={handleOnChange} />
           <Table fixtures={fixtures} />
         </>
       )}

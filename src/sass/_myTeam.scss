@@ -1,0 +1,42 @@
+@import "colors";
+
+.myTeam_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 5rem 0;
+}
+
+.myTeam_box {
+  display: flex;
+  flex-direction: column;
+  color: $font-white-color;
+  text-align: center;
+  margin-bottom: 5rem;
+
+  h4 {
+    padding: 0.4rem 0;
+  }
+
+  span {
+    font-size: 1.1rem;
+  }
+
+  a {
+    text-decoration: none;
+    display: block;
+    color: $font-white-color;
+
+    &:hover {
+      transform: scale(1.1);
+      color: $border-color;
+    }
+  }
+
+  img {
+    width: 20rem;
+    height: 20rem;
+    margin-bottom: 0.4rem;
+  }
+}

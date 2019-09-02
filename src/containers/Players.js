@@ -3,8 +3,7 @@ import Players from "../components/Players";
 import { getPlayers } from "../redux/players/actions";
 
 const mapState = state => ({
-  squad: state.squad,
-  loading: state.loading
+  squad: state.squad
 });
 
 const mapDispatch = dispatch => {

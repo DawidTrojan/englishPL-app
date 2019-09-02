@@ -1,8 +1,8 @@
 import React from "react";
 
-const Select = ({ changePlayers }) => (
+const Select = ({ changeOption }) => (
   <form>
-    <select className="form-control players_form" onChange={changePlayers}>
+    <select className="form-control players_select" onChange={changeOption}>
       <option value="57">Arsenal</option>
       <option value="58">Aston Villa</option>
       <option value="1044">Bournemouth</option>

@@ -3,11 +3,11 @@ import { NavLink } from "react-router-dom";
 import SignInLinks from "../../containers/SignedInLinks";
 import SignOutLinks from "./SignedOutLinks";
 
-const Menu = ({ auth, profile }) => {
+const Navigation = ({ auth, profile }) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
 
-  const hide = e => {
+  const hideMenu = e => {
     if (e && e.relatedTarget) {
       e.relatedTarget.click();
     }
@@ -15,33 +15,33 @@ const Menu = ({ auth, profile }) => {
   };
 
   const links = auth.uid ? (
-    <SignInLinks profile={profile} closeMenu={hide}></SignInLinks>
+    <SignInLinks profile={profile} closeAfterClick={hideMenu}></SignInLinks>
   ) : (
-    <SignOutLinks closeMenu={hide}></SignOutLinks>
+    <SignOutLinks closeAfterClick={hideMenu}></SignOutLinks>
   );
 
   return (
     <>
-      <nav className={isOpen ? "toggle_nav" : "header_nav"}>
-        <ul className={isOpen ? "toggle_nav_list" : "header_nav_list"}>
-          <li onClick={hide}>
+      <nav className={isOpen ? "toggle_nav" : "navigation"}>
+        <ul className={isOpen ? "toggle_nav_list" : "navigation_list"}>
+          <li onClick={hideMenu}>
             <NavLink className="link" activeClassName="active" to="/standings">
-              Standings
+              <span>Standings</span>
             </NavLink>
           </li>
-          <li onClick={hide}>
+          <li onClick={hideMenu}>
             <NavLink className="link" activeClassName="active" to="/fixtures">
-              Fixtures
+              <span>Fixtures</span>
             </NavLink>
           </li>
-          <li onClick={hide}>
+          <li onClick={hideMenu}>
             <NavLink className="link" activeClassName="active" to="/scorers">
-              Scorers
+              <span>Scorers</span>
             </NavLink>
           </li>
-          <li onClick={hide}>
+          <li onClick={hideMenu}>
             <NavLink className="link" activeClassName="active" to="/players">
-              Players
+              <span>Players</span>
             </NavLink>
           </li>
           {auth.isLoaded && links}
@@ -54,4 +54,4 @@ const Menu = ({ auth, profile }) => {
   );
 };
 
-export default Menu;
+export default Navigation;

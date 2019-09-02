@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "./Logo";
-import Menu from "../../containers/Menu";
+import Navigation from "../../containers/Navigation";
 import { Container, Row } from "react-bootstrap";
 
 const Header = () => (
@@ -8,7 +8,7 @@ const Header = () => (
     <Container>
       <Row className="justify-content-between align-items-center">
         <Logo />
-        <Menu />
+        <Navigation />
       </Row>
     </Container>
   </header>

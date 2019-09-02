@@ -10,7 +10,7 @@ import Teams from "../containers/Teams";
 import Players from "../containers/Players";
 import SignIn from "../containers/SignIn";
 import SignUp from "../containers/SignUp";
-import Favourites from "../containers/Favourites";
+import MyTeam from "../containers/MyTeam";
 import "../sass/main.scss";
 import { Container } from "react-bootstrap";
 
@@ -26,7 +26,7 @@ const App = () => {
           <Route path="/fixtures" component={Fixtures} />
           <Route path="/scorers" component={Scorers} />
           <Route path="/players" component={Players} />
-          <Route path="/favourites" component={Favourites} />
+          <Route path="/favourites" component={MyTeam} />
           <Route path="/signin" component={SignIn} />
           <Route path="/signup" component={SignUp} />
         </Switch>
