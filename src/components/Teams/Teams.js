@@ -8,7 +8,7 @@ const Teams = ({ teams: { teams }, getTeams }) => {
   }, [getTeams]);
 
   return (
-    <Container>
+    <Container className="teams_container">
       <TeamsList teams={teams} />
     </Container>
   );

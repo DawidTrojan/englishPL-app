@@ -1,26 +1,13 @@
-import React, { useEffect } from "react";
-import Image from "./Image";
-import Content from "./Content";
-import { Container, Row } from "react-bootstrap";
-import AOS from "aos";
+import React from "react";
+import Dashboard from "./Dashboard";
+import { Container } from "react-bootstrap";
 
-const Main = ({ teams: { teams }, getInfoTeams }) => {
-  useEffect(() => {
-    getInfoTeams();
-  }, [getInfoTeams]);
-
+const Main = () => {
   return (
-    <Container>
-      <Row className="main_image justify-content-center">
-        <Image />
-      </Row>
-      <Row className="justify-content-center">
-        <Content teams={teams} />
-      </Row>
+    <Container className="main_container">
+      <Dashboard />
     </Container>
   );
 };
-
-AOS.init();
 
 export default Main;

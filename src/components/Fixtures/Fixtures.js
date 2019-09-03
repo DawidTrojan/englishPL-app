@@ -4,7 +4,7 @@ import Table from "./Table";
 import Loading from "../Loading/Loading";
 import { Container } from "react-bootstrap";
 
-const Fixtures = ({ fixtures: { fixtures }, getFixtures, error }) => {
+const Fixtures = ({ fixtures: { fixtures }, getFixtures }) => {
   useEffect(() => {
     getFixtures();
   }, [getFixtures]);

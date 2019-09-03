@@ -1,7 +1,16 @@
 @import "colors";
 
 footer {
-  background: $second-color;
+  background: linear-gradient(
+    135deg,
+    rgba(80, 255, 134, 1) 0%,
+    rgba(80, 255, 134, 1) 4%,
+    rgba(99, 91, 209, 1) 28%,
+    rgba(31, 26, 95, 1) 38%,
+    rgba(31, 26, 95, 1) 75%,
+    rgba(31, 26, 95, 1) 92%,
+    rgba(31, 26, 95, 1) 100%
+  );
   min-height: 5rem;
   width: 100%;
   color: $font-white-color;

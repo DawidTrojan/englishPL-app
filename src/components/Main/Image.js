@@ -1,5 +1,5 @@
 import React from "react";
-import image from "./main.jpg";
+import image from "./806527.jpg";
 
 const Image = () => <img src={image} alt="" />;
 

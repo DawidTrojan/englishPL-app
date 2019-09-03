@@ -57,7 +57,8 @@
   flex-direction: column;
   margin: 5rem 0;
   h2 {
-    color: $font-white-color;
+    color: $green-color;
+    font-weight: bold;
     text-align: center;
 
     @media (max-width: 490px) {

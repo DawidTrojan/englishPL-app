@@ -42,8 +42,6 @@
   color: $font-white-color;
   font-size: 0.9rem;
   text-transform: uppercase;
-  border: 1px solid $border-color;
-  padding: 0.1rem 0.5rem;
   cursor: pointer;
 
   &:hover {
@@ -58,11 +56,11 @@
 }
 
 .user_greeting_box {
-  background: $border-color;
-  border-radius: 50px;
+  color: $font-white-color;
+  background: #6159ce;
+  border-radius: 5px;
 
   @media (max-width: 991px) {
-    width: 50%;
     background: none;
   }
 
@@ -72,7 +70,7 @@
 
     @media (max-width: 991px) {
       padding: 0;
-      color: $font-white-color;
+      color: $green-color;
     }
   }
 }
@@ -120,8 +118,9 @@
     }
 
     li {
-      margin-top: 0.7rem;
       width: 100%;
+      border-bottom: 1px solid #544db8;
+      padding: 0.5rem 0;
     }
   }
 

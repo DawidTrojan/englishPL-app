@@ -3,8 +3,7 @@ import Fixtures from "../components/Fixtures";
 import { getFixtures } from "../redux/fixtures/actions";
 
 const mapState = state => ({
-  fixtures: state.fixtures,
-  error: state.error
+  fixtures: state.fixtures
 });
 
 const mapDispatch = dispatch => {
