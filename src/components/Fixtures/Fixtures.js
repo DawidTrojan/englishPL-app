@@ -18,7 +18,7 @@ const Fixtures = ({ fixtures: { fixtures }, getFixtures }) => {
         <Loading></Loading>
       ) : (
         <>
-          <h2>Select matchday to check matches and live results </h2>
+          <h2>Matches and live results </h2>
           <Select changeOption={handleOnChange} />
           <Table fixtures={fixtures} />
         </>

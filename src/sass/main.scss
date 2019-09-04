@@ -24,7 +24,11 @@ html {
   height: 100%;
 }
 .wrapper {
-  min-height: 55rem;
+  min-height: 50rem;
+  padding-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #root {
   height: 100%;

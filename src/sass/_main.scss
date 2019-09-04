@@ -4,18 +4,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 38rem;
-
-  @media (max-width: 767px) {
-    height: 42rem;
-  }
-
-  @media (max-width: 767px) {
-    height: 45rem;
-  }
-
-  @media (max-width: 379px) {
-    height: 47rem;
+  height: 100%;
+  margin-bottom: 5rem;
+  @media (max-width: 991px) {
+    margin-top: 5rem;
   }
 }
 
@@ -24,10 +16,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 100%;
-  width: 80%;
   text-align: center;
   position: relative;
+  height: 100%;
+  width: 80%;
 
   @media (max-width: 767px) {
     width: 100%;
@@ -64,7 +56,7 @@
   .dashboard_image {
     width: 30%;
     padding-top: 2.5rem;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
 
     @media (max-width: 991px) {
       width: 50%;
@@ -87,7 +79,7 @@
 
     h2 {
       font-weight: bold;
-
+      padding-bottom: 0.5rem;
       @media (max-width: 519px) {
         font-size: 1.2rem;
       }
@@ -95,7 +87,15 @@
   }
 
   .dashboard_register {
+    margin-bottom: 2rem;
     span {
+      color: $font-white-color;
+      font-weight: bold;
+
+      &:hover {
+        color: $green-color;
+      }
+
       @media (max-width: 519px) {
         font-size: 0.8rem;
       }
@@ -106,7 +106,7 @@
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    margin-bottom: 2rem;
+    margin: 2rem 0;
 
     .dashboard_content__boxes {
       display: flex;
@@ -125,6 +125,7 @@
   .dashboard_arrow {
     i {
       font-size: 3.2rem;
+      margin: 3rem 0;
       color: $green-color;
       background: linear-gradient(
         135deg,

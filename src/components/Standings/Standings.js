@@ -3,7 +3,7 @@ import Table from "./Table";
 import Loading from "../Loading";
 import { Container } from "react-bootstrap";
 
-const Standings = ({ standings: { standings }, getStandings, loading }) => {
+const Standings = ({ standings: { standings }, getStandings }) => {
   useEffect(() => {
     getStandings();
   }, [getStandings]);

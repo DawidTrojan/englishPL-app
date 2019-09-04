@@ -5,25 +5,23 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  margin: 5rem 0;
-
-  @media (max-width: 1199px) {
-    margin-top: 4rem;
-    margin-bottom: 5rem 0;
-  }
+  margin-bottom: 7rem;
 
   h2 {
     color: $font-white-color;
+    font-weight: bold;
     text-align: center;
     margin-bottom: 3rem;
+    word-spacing: -5px;
 
-    @media (max-width: 1199px) {
-      font-size: 1.3rem;
+    @media (max-width: 991px) {
+      padding-top: 3rem;
+      font-size: 1.6rem;
     }
 
-    @media (max-width: 685px) {
-      font-size: 1.2rem;
+    @media (max-width: 490px) {
+      margin-top: 3rem;
+      font-size: 1.1rem;
     }
   }
 }
@@ -36,17 +34,56 @@
     text-align: center;
     border-bottom: solid $border-color 1px;
 
+    @media (max-width: 991px) {
+      padding: 0.4rem 1rem;
+    }
+
+    @media (max-width: 767px) {
+      padding: 0.3rem 1.6rem;
+    }
+
     @media (max-width: 685px) {
-      padding: 0.1rem 0.1rem;
+      padding: 0.2rem 1.4rem;
+    }
+
+    @media (max-width: 573px) {
+      padding: 0.2rem 1.1rem;
+    }
+
+    @media (max-width: 527px) {
+      padding: 0.2rem 0.9rem;
+    }
+
+    @media (max-width: 497px) {
+      padding: 0.2rem 0.7rem;
+    }
+
+    @media (max-width: 458px) {
+      padding: 0.2rem 0.5rem;
+    }
+
+    @media (max-width: 399px) {
+      padding: 0.2rem 0.4rem;
+    }
+
+    @media (max-width: 363px) {
+      padding: 0.2rem 0.3rem;
+    }
+    @media (max-width: 350px) {
+      padding: 0.2rem 0.2rem;
     }
   }
   .fixtures_table__header {
-    background: $main-color;
-    color: $font-white-color;
+    background: $green-color;
+    color: $second-color;
     font-size: 0.8rem;
   }
   th {
     text-align: center;
+
+    @media (max-width: 527px) {
+      font-size: 0.7rem;
+    }
   }
 
   @media (max-width: 1199px) {
@@ -58,39 +95,50 @@
   }
 
   @media (max-width: 767px) {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 
   @media (max-width: 685px) {
     font-size: 0.8rem;
   }
 
-  @media (max-width: 447px) {
+  @media (max-width: 527px) {
     font-size: 0.7rem;
+  }
+  @media (max-width: 399px) {
+    font-size: 0.6rem;
   }
 }
 
 .fixtures_result_home {
   background: $main-color;
-  color: $font-white-color;
+  color: $green-color;
   padding: 0 0.7rem;
   border-right: 1px solid $font-white-color;
 }
 
 .fixtures_result_away {
   background: $main-color;
-  color: $font-white-color;
+  color: $green-color;
   padding: 0 0.7rem;
 }
 
 .fixtures_select {
-  border: solid $border-color 2px;
+  border: solid $green-color 2px;
   background: $second-color;
   color: $font-white-color;
   margin-bottom: 3rem;
 
+  @media (max-width: 720px) {
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 496px) {
+    font-size: 0.8rem;
+  }
+
   &:focus {
-    background: $main-color;
+    background: $second-color;
     color: $font-white-color;
   }
 }

@@ -28,7 +28,7 @@ const Content = ({ myTeam }) => (
     </h4>
     <h4>
       <a href={myTeam.website} target="_blank" rel="noopener noreferrer">
-        Go to website!
+        Go to official website!
       </a>
     </h4>
   </div>

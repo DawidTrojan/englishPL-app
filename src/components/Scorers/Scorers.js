@@ -14,7 +14,7 @@ const Scorers = ({ scorers: { scorers }, getScorers }) => {
         <Loading></Loading>
       ) : (
         <>
-          <h2>Statistics of the league's top scorers</h2>
+          <h2>League's top scorers</h2>
           <Table scorers={scorers} />
         </>
       )}

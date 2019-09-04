@@ -4,57 +4,67 @@ import { Form, Button, Col } from "react-bootstrap";
 
 const SignUpForm = ({ onSubmit, onChange, error, success }) => (
   <Form onSubmit={onSubmit} className="signup_form">
+    <div className="ball_icon__container">
+      <i className="material-icons ball_icon">sports_soccer</i>
+    </div>
     <h2>Sign Up</h2>
     <Form.Group controlId="email" className="signup_group">
-      <Col xl="5" lg="6" md="9">
-        <Form.Label>Email</Form.Label>
+      <Col xl="10" lg="11" md="11" xs="12">
+        <Form.Label className="signup_label">
+          <span>Email</span>
+        </Form.Label>
         <Form.Control
           className="form_control_signup"
           type="email"
-          placeholder="Enter email"
           onChange={onChange}
         />
       </Col>
     </Form.Group>
     <Form.Group controlId="password" className="signup_group">
-      <Col xl="5" lg="6" md="9">
-        <Form.Label>Password</Form.Label>
+      <Col xl="10" lg="11" md="11" xs="12">
+        <Form.Label className="signup_label">
+          <span>Password</span>
+        </Form.Label>
         <Form.Control
           className="form_control_signup"
           type="password"
-          placeholder="Password"
           onChange={onChange}
         />
       </Col>
     </Form.Group>
     <Form.Group controlId="firstName" className="signup_group">
-      <Col xl="5" lg="6" md="9">
-        <Form.Label>First Name</Form.Label>
+      <Col xl="10" lg="11" md="11" xs="12">
+        <Form.Label className="signup_label">
+          <span>First Name</span>
+        </Form.Label>
         <Form.Control
           className="form_control_signup"
           type="text"
-          placeholder="First Name"
           onChange={onChange}
         />
       </Col>
     </Form.Group>
     <Form.Group controlId="lastName" className="signup_group">
-      <Col xl="5" lg="6" md="9">
-        <Form.Label>Last Name</Form.Label>
+      <Col xl="10" lg="11" md="11" xs="12">
+        <Form.Label>
+          <span>Last Name</span>
+        </Form.Label>
         <Form.Control
           className="form_control_signup"
           type="text"
-          placeholder="Last Name"
           onChange={onChange}
         />
       </Col>
     </Form.Group>
     <Form.Group controlId="myTeam" className="signup_group">
-      <Col xl="5" lg="6" md="9">
+      <Col xl="10" lg="11" md="11" xs="12">
+        <Form.Label className="signup_label">
+          <span>My Team</span>
+        </Form.Label>
         <Form.Control
           as="select"
           defaultValue="-1"
-          className="form-control dropdown_option"
+          className="form-control dropdown_option signup_select"
           onChange={onChange}
         >
           <Options />
@@ -67,7 +77,7 @@ const SignUpForm = ({ onSubmit, onChange, error, success }) => (
       </Button>
     </div>
     <div className="signup_error">
-      {error ? <p>{error}</p> : <p>{success}</p>}
+      {error ? <span>{error}</span> : <span>{success}</span>}
     </div>
   </Form>
 );

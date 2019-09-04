@@ -26,7 +26,7 @@ const App = () => {
           <Route path="/fixtures" component={Fixtures} />
           <Route path="/scorers" component={Scorers} />
           <Route path="/players" component={Players} />
-          <Route path="/favourites" component={MyTeam} />
+          <Route path="/myteam" component={MyTeam} />
           <Route path="/signin" component={SignIn} />
           <Route path="/signup" component={SignUp} />
         </Switch>

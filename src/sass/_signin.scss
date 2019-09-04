@@ -4,25 +4,51 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 5rem;
 }
 .signin_form {
   color: $font-white-color;
-  margin: 5rem 0;
   width: 50%;
-  padding-top: 1rem;
+  padding-top: 3rem;
   background: $second-color;
-  box-shadow: 0px 1px 5px rgba(177, 52, 52, 0);
-  transition: all 1.6s;
+  position: relative;
 
-  &:hover {
-    transform: scale(1.1, 1.1);
-    box-shadow: 1px 5px 14px rgba(0, 0, 0, 3);
-    z-index: 1;
+  color: $font-white-color;
+  background: $second-color;
+  background-clip: padding-box;
+  border: solid 5px transparent;
+  border-radius: 1em;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -5px;
+    border-radius: inherit;
+    background: linear-gradient(
+      135deg,
+      rgba(80, 255, 134, 1) 0%,
+      rgba(80, 255, 134, 1) 4%,
+      rgba(99, 91, 209, 1) 24%,
+      rgba(182, 54, 217, 1) 48%,
+      rgba(154, 59, 250, 1) 75%,
+      rgb(40, 35, 104) 89%,
+      rgb(51, 45, 134) 100%
+    );
   }
 
   h2 {
     text-align: center;
-    margin-bottom: 6rem;
+    margin-bottom: 5rem;
+    font-weight: bold;
+
+    @media (max-width: 552px) {
+      font-size: 1.5rem;
+    }
   }
 
   .form_control_signin {
@@ -45,10 +71,27 @@
 
     .signin_button {
       padding: 0.5rem 1.5rem;
-      background: transparent;
+      background: $green-color;
+      border-color: $green-color;
+      color: $second-color;
+      font-weight: bold;
 
       &:hover {
-        background: lighten($main-color, 20%);
+        background: transparent;
+        color: $font-white-color;
+      }
+
+      @media (max-width: 552px) {
+        padding: 0.3rem 1.2rem;
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  .signin_label {
+    span {
+      @media (max-width: 552px) {
+        font-size: 0.9rem;
       }
     }
   }
@@ -57,8 +100,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    color: red;
+    margin: 2rem 0;
 
-    margin-top: 1.5rem;
+    font-weight: bold;
+
+    @media (max-width: 552px) {
+      font-size: 0.9rem;
+    }
+  }
+
+  @media (max-width: 1199px) {
+    width: 60%;
+  }
+  @media (max-width: 991px) {
+    margin-top: 7rem;
+  }
+  @media (max-width: 767px) {
+    width: 80%;
+  }
+  @media (max-width: 475px) {
+    width: 100%;
   }
 }
 
@@ -69,4 +132,9 @@
 }
 .ball_icon {
   font-size: 5rem;
+  color: $green-color;
+
+  @media (max-width: 552px) {
+    font-size: 4rem;
+  }
 }

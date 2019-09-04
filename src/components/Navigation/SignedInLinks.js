@@ -15,12 +15,8 @@ const SignedInLinks = ({ signOut, profile, closeAfterClick }) => {
         </a>
       </li>
       <li>
-        <NavLink
-          onClick={closeAfterClick}
-          className="auth_link"
-          to="/favourites"
-        >
-          <span>Favourites</span>
+        <NavLink onClick={closeAfterClick} className="auth_link" to="/myteam">
+          <span>My Team</span>
         </NavLink>
       </li>
     </>
