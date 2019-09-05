@@ -11,6 +11,7 @@ const SignIn = ({ signIn, authError, authSuccess, auth }) => {
   });
 
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
 
   const handleOnChange = e => {
     setSignIn({
@@ -23,10 +24,11 @@ const SignIn = ({ signIn, authError, authSuccess, auth }) => {
     e.preventDefault();
     signIn(sign.email, sign.password);
     setLoading(true);
+    setError(authError);
   };
 
   if (auth.uid) return <Redirect to="/" />;
-  if (loading) return <Loading></Loading>;
+  if (loading && error) return <Loading></Loading>;
 
   return (
     <Container className="signin_container">

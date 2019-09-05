@@ -1,6 +1,5 @@
 import React from "react";
-import { Form, Button } from "react-bootstrap";
-import { Col } from "react-bootstrap";
+import { Form, Button, Col } from "react-bootstrap";
 
 const SignInForm = ({ onSubmit, onChange, error, success }) => (
   <Form onSubmit={onSubmit} className="signin_form">
@@ -34,7 +33,7 @@ const SignInForm = ({ onSubmit, onChange, error, success }) => (
     </Form.Group>
     <div className="signin_button__container">
       <Button variant="primary" type="submit" className="signin_button">
-        SIGN IN
+        <span>SIGN IN</span>
       </Button>
     </div>
     <div className="signin_error">

@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import Content from "./Content";
+import Loading from "../Loading";
 import { Redirect } from "react-router-dom";
 import { Container } from "react-bootstrap";
 
@@ -12,7 +13,11 @@ const MyTeam = ({ auth, profile, getMyTeam, myTeam: { myTeam } }) => {
 
   return (
     <Container className="myTeam_container">
-      <Content myTeam={myTeam}></Content>
+      {myTeam.length === 0 ? (
+        <Loading></Loading>
+      ) : (
+        <Content myTeam={myTeam}></Content>
+      )}
     </Container>
   );
 };

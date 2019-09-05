@@ -8,4 +8,7 @@ const mapState = state => {
   };
 };
 
-export default connect(mapState)(Navigation);
+export default connect(
+  mapState,
+  null
+)(Navigation);

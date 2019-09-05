@@ -40,31 +40,35 @@
   border-radius: 5px;
 
   @media (max-width: 1199px) {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 
   @media (max-width: 720px) {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   @media (max-width: 646px) {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 
   @media (max-width: 567px) {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 
   @media (max-width: 496px) {
+    font-size: 0.7rem;
+  }
+
+  @media (max-width: 320px) {
     font-size: 0.6rem;
   }
 
   td {
-    padding: 0.5rem 1.3rem;
+    padding: 0.7rem 1.8rem;
     text-align: center;
     border-bottom: solid $border-color 1px;
 
-    @media (max-width: 898px) {
+    @media (max-width: 924px) {
       padding: 0.5rem 0.9rem;
     }
     @media (max-width: 767px) {

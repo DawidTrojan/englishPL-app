@@ -13,6 +13,7 @@ const SignUp = ({ auth, signUp, authError, authSuccess }) => {
   });
 
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
 
   const handleOnChange = e => {
     setRegister({
@@ -25,10 +26,11 @@ const SignUp = ({ auth, signUp, authError, authSuccess }) => {
     e.preventDefault();
     signUp(register);
     setLoading(true);
+    setError(authError);
   };
 
   if (auth.uid) return <Redirect to="/" />;
-  if (loading) return <Loading></Loading>;
+  if (loading && error) return <Loading></Loading>;
 
   return (
     <Container className="signup_container">

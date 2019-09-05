@@ -73,7 +73,7 @@ const SignUpForm = ({ onSubmit, onChange, error, success }) => (
     </Form.Group>
     <div className="signup_button_container">
       <Button variant="primary" type="submit" className="signup_button">
-        Sign Up
+        <span>SIGN UP</span>
       </Button>
     </div>
     <div className="signup_error">

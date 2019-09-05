@@ -20,12 +20,16 @@ const Content = ({ myTeam }) => (
     <h4>
       Stadium: <span>{myTeam.venue}</span>
     </h4>
-    <h4>
-      Phone: <span>{myTeam.phone}</span>
-    </h4>
-    <h4>
-      Email: <span>{myTeam.email}</span>
-    </h4>
+    {!myTeam.phone ? null : (
+      <h4>
+        Phone: <span>{myTeam.phone}</span>
+      </h4>
+    )}
+    {!myTeam.email ? null : (
+      <h4>
+        Email: <span>{myTeam.email}</span>
+      </h4>
+    )}
     <h4>
       <a href={myTeam.website} target="_blank" rel="noopener noreferrer">
         Go to official website!
