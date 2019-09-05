@@ -10,7 +10,7 @@ import {
 const initState = {
   authError: null,
   authSuccess: null,
-  authLoading: false
+  authLoading: null
 };
 
 export const authReducer = (state = initState, action) => {

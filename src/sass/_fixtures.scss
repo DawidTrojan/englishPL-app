@@ -12,30 +12,32 @@
     font-weight: bold;
     text-align: center;
     margin-bottom: 3rem;
-    word-spacing: -5px;
 
     @media (max-width: 991px) {
-      padding-top: 3rem;
-      font-size: 1.6rem;
+      padding-top: 5rem;
+      font-size: 2.2rem;
     }
 
     @media (max-width: 490px) {
       margin-top: 3rem;
-      font-size: 1.1rem;
+      font-size: 1.8rem;
     }
   }
 }
 
 .fixtures_table {
+  border-radius: 5px;
+  overflow: hidden;
   color: $font-white-color;
   background: $second-color;
+
   td {
     padding: 0.5rem 2rem;
     text-align: center;
     border-bottom: solid $border-color 1px;
 
     @media (max-width: 991px) {
-      padding: 0.4rem 1rem;
+      padding: 0rem 1.6rem;
     }
 
     @media (max-width: 767px) {
@@ -51,7 +53,7 @@
     }
 
     @media (max-width: 527px) {
-      padding: 0.2rem 0.9rem;
+      padding: 0.3rem 0.9rem;
     }
 
     @media (max-width: 497px) {
@@ -87,30 +89,31 @@
   }
 
   @media (max-width: 1199px) {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   @media (max-width: 991px) {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   @media (max-width: 767px) {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   @media (max-width: 685px) {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   @media (max-width: 527px) {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
   @media (max-width: 399px) {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 }
 
 .fixtures_result_home {
+  font-weight: bold;
   background: $main-color;
   color: $green-color;
   padding: 0 0.7rem;
@@ -118,13 +121,14 @@
 }
 
 .fixtures_result_away {
+  font-weight: bold;
   background: $main-color;
   color: $green-color;
   padding: 0 0.7rem;
 }
 
 .fixtures_select {
-  border: solid $green-color 2px;
+  border: solid $green-color 1px;
   background: $second-color;
   color: $font-white-color;
   margin-bottom: 3rem;

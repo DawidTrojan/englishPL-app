@@ -43,13 +43,13 @@
     font-weight: bold;
 
     @media (max-width: 552px) {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
     }
   }
 
   .form_control_signup {
     &:focus {
-      border: solid $border-color 3px;
+      border: solid $green-color 2px;
     }
   }
 
@@ -68,7 +68,7 @@
   }
 
   .signup_select {
-    border: solid $green-color 2px;
+    border: solid $green-color 1px;
     background: $second-color;
     color: $font-white-color;
 
@@ -89,14 +89,14 @@
 
     .signup_button {
       padding: 0.5rem 1.5rem;
-      background: $green-color;
-      border-color: $green-color;
-      color: $second-color;
+      background: #a032c8;
+      color: $font-white-color;
       font-weight: bold;
+      border-color: #a032c8;
 
       &:hover {
         background: transparent;
-        color: $font-white-color;
+        transform: scale(1.1);
       }
 
       @media (max-width: 552px) {

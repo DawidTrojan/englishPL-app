@@ -19,7 +19,6 @@
   h2 {
     color: $font-white-color;
     text-align: center;
-    word-spacing: -5px;
     padding-bottom: 4rem;
     font-weight: bold;
 
@@ -39,6 +38,7 @@
   color: $font-white-color;
   white-space: nowrap;
   overflow: hidden;
+  border-radius: 5px;
 
   @media (max-width: 1199px) {
     font-size: 0.9rem;
@@ -49,16 +49,15 @@
   }
 
   @media (max-width: 646px) {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 
   @media (max-width: 567px) {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
 
   @media (max-width: 496px) {
-    font-size: 0.5rem;
-    font-weight: bold;
+    font-size: 0.6rem;
   }
 
   td {
@@ -120,7 +119,7 @@
 }
 
 .players_select {
-  border: solid $green-color 2px;
+  border: solid $green-color 1px;
   background: $second-color;
   color: $font-white-color;
   margin-bottom: 3rem;

@@ -5,11 +5,10 @@ import { Container } from "react-bootstrap";
 
 const MyTeam = ({ auth, profile, getMyTeam, myTeam: { myTeam } }) => {
   useEffect(() => {
-    getMyTeam(profile.myTeam);
-  }, [getMyTeam]);
+    getMyTeam(profile);
+  }, [profile, getMyTeam]);
 
   if (!auth.uid) return <Redirect to="/signin" />;
-  if (profile.isEmpty) return <Redirect to="/" />;
 
   return (
     <Container className="myTeam_container">

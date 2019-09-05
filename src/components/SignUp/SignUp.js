@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import SignUpForm from "./SignUpForm";
+import Loading from "../Loading";
 import { Redirect } from "react-router-dom";
 import { Container } from "react-bootstrap";
 
@@ -11,6 +12,8 @@ const SignUp = ({ auth, signUp, authError, authSuccess }) => {
     myTeam: ""
   });
 
+  const [loading, setLoading] = useState(false);
+
   const handleOnChange = e => {
     setRegister({
       ...register,
@@ -21,9 +24,11 @@ const SignUp = ({ auth, signUp, authError, authSuccess }) => {
   const handleOnSubmit = e => {
     e.preventDefault();
     signUp(register);
+    setLoading(true);
   };
 
   if (auth.uid) return <Redirect to="/" />;
+  if (loading) return <Loading></Loading>;
 
   return (
     <Container className="signup_container">

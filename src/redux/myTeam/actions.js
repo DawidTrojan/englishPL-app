@@ -23,7 +23,7 @@ export const fetchedMyTeamError = payload => {
 };
 
 export const getMyTeam = id => dispatch => {
-  dispatch(startFetchingMyTeam(id));
+  dispatch(startFetchingMyTeam());
   const getMyTeamUrl = id => `http://api.football-data.org//v2/teams/${id}`;
   fetch(getMyTeamUrl(id), {
     headers: {

@@ -1,9 +1,17 @@
 .logo_container {
-  width: 10rem;
-  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+  max-height: 5rem;
   overflow: hidden;
-  img {
-    width: 100%;
+
+  .logo_link {
     height: 100%;
+    width: 100%;
+  }
+  img {
+    width: 13rem;
+    height: 9rem;
   }
 }

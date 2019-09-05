@@ -18,7 +18,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Space Mono", monospace;
+  font-family: "Roboto Condensed", sans-serif;
 }
 html {
   height: 100%;
@@ -35,6 +35,11 @@ html {
 }
 body {
   min-height: 100%;
-  background: darken($main-color, 2%);
+  background: $main-color;
   position: relative;
+
+  h2 {
+    font-family: "Spectral SC", serif;
+    font-size: 2.3rem;
+  }
 }

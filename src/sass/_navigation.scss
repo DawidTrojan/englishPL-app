@@ -13,7 +13,7 @@
     padding-top: 0.7rem;
 
     li {
-      padding: 0 0.7rem;
+      padding: 0 1rem;
     }
   }
 
@@ -21,20 +21,26 @@
     display: none;
   }
 }
+
 .active {
-  border-bottom: 2px solid $border-color;
-  padding-bottom: 0.2rem;
-  width: 100%;
+  color: $green-color;
 }
 
 .link {
   color: $font-white-color;
   font-size: 0.9rem;
   text-transform: uppercase;
+  padding-bottom: 5px;
+  background-image: linear-gradient($green-color, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 3px;
+  transition: background-size 0.5s;
 
   &:hover {
-    color: darken($font-white-color, 50%);
+    color: $font-white-color;
     text-decoration: none;
+    background-size: 100% 2px;
   }
 }
 
@@ -43,10 +49,17 @@
   font-size: 0.9rem;
   text-transform: uppercase;
   cursor: pointer;
+  padding-bottom: 5px;
+  background-image: linear-gradient($green-color, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.5s;
 
   &:hover {
-    color: darken($font-white-color, 50%);
+    color: $font-white-color;
     text-decoration: none;
+    background-size: 100% 2px;
   }
 
   @media (max-width: 991px) {
@@ -56,17 +69,37 @@
 }
 
 .user_greeting_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: $font-white-color;
-  background: #6159ce;
+  position: fixed;
+  right: 0px;
+  top: 250px;
+  width: 125px;
+  background: linear-gradient(
+    45deg,
+    rgba(181, 54, 217, 1) 0%,
+    rgba(31, 42, 142, 1) 73%,
+    rgba(31, 42, 142, 1) 73%,
+    rgba(31, 42, 122, 1) 83%,
+    rgba(31, 42, 133, 1) 99%
+  );
   border-radius: 5px;
+  padding: 0.2rem 0.3rem;
+  font-size: 1.2rem;
 
   @media (max-width: 991px) {
     background: none;
+    position: static;
+    width: 100%;
   }
 
   span {
-    padding: 0.9rem 0.7rem;
-    color: $font-white-color;
+    padding: 1rem 0.9rem;
+    color: $green-color;
+    font-family: "Pompiere", cursive;
+    letter-spacing: 0.6px;
 
     @media (max-width: 991px) {
       padding: 0;

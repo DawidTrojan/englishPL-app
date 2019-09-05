@@ -5,7 +5,7 @@ import { getMyTeam } from "../redux/myTeam/actions";
 const mapState = state => {
   return {
     auth: state.firebaseReducer.auth,
-    profile: state.firebaseReducer.profile,
+    profile: state.firebaseReducer.profile.myTeam,
     myTeam: state.myTeam
   };
 };
