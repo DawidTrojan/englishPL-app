@@ -17,7 +17,7 @@ const Navigation = ({ auth, profile }) => {
   const links = auth.uid ? (
     <SignInLinks profile={profile} closeAfterClick={hideMenu}></SignInLinks>
   ) : (
-    <SignOutLinks closeAfterClick={hideMenu}></SignOutLinks>
+    <SignOutLinks closeMenu={hideMenu}></SignOutLinks>
   );
 
   return (

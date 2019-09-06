@@ -30,16 +30,30 @@ const SignUp = ({ auth, signUp, authError, authSuccess }) => {
   };
 
   if (auth.uid) return <Redirect to="/" />;
-  if (loading && error) return <Loading></Loading>;
+  if (authError)
+    return (
+      <Container className="signup_container">
+        <SignUpForm
+          onSubmit={handleOnSubmit}
+          onChange={handleOnChange}
+          error={authError}
+          success={authSuccess}
+        />
+      </Container>
+    );
 
   return (
     <Container className="signup_container">
-      <SignUpForm
-        onSubmit={handleOnSubmit}
-        onChange={handleOnChange}
-        error={authError}
-        success={authSuccess}
-      />
+      {loading ? (
+        <Loading></Loading>
+      ) : (
+        <SignUpForm
+          onSubmit={handleOnSubmit}
+          onChange={handleOnChange}
+          error={authError}
+          success={authSuccess}
+        />
+      )}
     </Container>
   );
 };

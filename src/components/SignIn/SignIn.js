@@ -11,7 +11,6 @@ const SignIn = ({ signIn, authError, authSuccess, auth }) => {
   });
 
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
 
   const handleOnChange = e => {
     setSignIn({
@@ -24,20 +23,33 @@ const SignIn = ({ signIn, authError, authSuccess, auth }) => {
     e.preventDefault();
     signIn(sign.email, sign.password);
     setLoading(true);
-    setError(authError);
   };
 
   if (auth.uid) return <Redirect to="/" />;
-  if (loading && error) return <Loading></Loading>;
+  if (authError)
+    return (
+      <Container className="signin_container">
+        <SignInForm
+          onChange={handleOnChange}
+          onSubmit={handleOnSubmit}
+          error={authError}
+          success={authSuccess}
+        ></SignInForm>
+      </Container>
+    );
 
   return (
     <Container className="signin_container">
-      <SignInForm
-        onChange={handleOnChange}
-        onSubmit={handleOnSubmit}
-        error={authError}
-        success={authSuccess}
-      ></SignInForm>
+      {loading ? (
+        <Loading></Loading>
+      ) : (
+        <SignInForm
+          onChange={handleOnChange}
+          onSubmit={handleOnSubmit}
+          error={authError}
+          success={authSuccess}
+        ></SignInForm>
+      )}
     </Container>
   );
 };
