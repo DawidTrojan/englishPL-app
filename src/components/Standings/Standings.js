@@ -10,7 +10,7 @@ const Standings = ({ standings: { standings }, getStandings }) => {
 
   return (
     <Container className="standings_container">
-      {standings.length === 0 ? (
+      {!standings.length ? (
         <Loading></Loading>
       ) : (
         <>

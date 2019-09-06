@@ -14,7 +14,7 @@ const Fixtures = ({ fixtures: { fixtures }, getFixtures }) => {
   };
   return (
     <Container className="fixtures_container">
-      {fixtures.length === 0 ? (
+      {!fixtures.length ? (
         <Loading></Loading>
       ) : (
         <>

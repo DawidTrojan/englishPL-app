@@ -14,7 +14,7 @@ const Players = ({ squad: { squad }, getPlayers }) => {
   };
   return (
     <Container className="players_container">
-      {squad.length === 0 ? (
+      {!squad.length ? (
         <Loading></Loading>
       ) : (
         <>

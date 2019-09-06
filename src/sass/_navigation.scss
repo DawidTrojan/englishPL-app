@@ -23,7 +23,6 @@
 }
 
 .active {
-  color: $green-color;
 }
 
 .link {
@@ -34,8 +33,8 @@
   background-image: linear-gradient($green-color, currentColor);
   background-position: 0% 100%;
   background-repeat: no-repeat;
-  background-size: 0% 3px;
-  transition: background-size 0.5s;
+  background-size: 0% 4px;
+  transition: background-size 0.4s;
 
   &:hover {
     color: $font-white-color;
@@ -45,7 +44,7 @@
 }
 
 .auth_link {
-  color: $font-white-color;
+  color: $green-color;
   font-size: 0.9rem;
   text-transform: uppercase;
   cursor: pointer;
@@ -103,7 +102,6 @@
 
     @media (max-width: 991px) {
       padding: 0;
-      color: $green-color;
     }
   }
 }

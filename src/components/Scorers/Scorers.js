@@ -10,7 +10,7 @@ const Scorers = ({ scorers: { scorers }, getScorers }) => {
 
   return (
     <Container className="scorers_container">
-      {scorers.length === 0 ? (
+      {!scorers.length ? (
         <Loading></Loading>
       ) : (
         <>
