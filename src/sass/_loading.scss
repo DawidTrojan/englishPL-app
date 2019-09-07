@@ -24,9 +24,7 @@
   background: radial-gradient(rgba(12, 6, 45, 0.8), rgba(31, 26, 95, 0.8));
 }
 
-/* :not(:required) hides these rules from IE9 and below */
 .loading:not(:required) {
-  /* hide "loading..." text */
   font: 0/0 a;
   color: transparent;
   text-shadow: none;

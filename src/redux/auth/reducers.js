@@ -1,9 +1,8 @@
 import {
-  START_LOG_IN,
-  LOG_IN,
-  LOG_IN_ERROR,
+  SIGNED_IN,
+  SIGN_IN_ERROR,
   SIGN_OUT,
-  SIGN_UP,
+  SIGNED_UP,
   SIGN_UP_ERROR
 } from "./actions";
 
@@ -15,12 +14,7 @@ const initState = {
 
 export const authReducer = (state = initState, action) => {
   switch (action.type) {
-    case START_LOG_IN:
-      return {
-        ...state,
-        authLoading: true
-      };
-    case LOG_IN:
+    case SIGNED_IN:
       return {
         ...state,
         authError: null,
@@ -28,7 +22,7 @@ export const authReducer = (state = initState, action) => {
         authLoading: false
       };
 
-    case LOG_IN_ERROR:
+    case SIGN_IN_ERROR:
       console.log("login failed");
       return {
         ...state,
@@ -38,7 +32,7 @@ export const authReducer = (state = initState, action) => {
     case SIGN_OUT:
       return state;
 
-    case SIGN_UP:
+    case SIGNED_UP:
       return {
         ...state,
         authError: null

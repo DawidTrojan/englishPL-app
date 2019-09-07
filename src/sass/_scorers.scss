@@ -2,24 +2,38 @@
 
 .scorers_container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 5rem;
+  min-height: 75vh;
+  margin-bottom: 11rem;
+
+  @media (max-width: 517px) {
+    margin-bottom: 10rem;
+  }
+  @media (max-width: 490px) {
+    margin-bottom: 9rem;
+  }
 
   h2 {
+    padding-bottom: 5rem;
+    font-family: "Livvic", sans-serif;
     color: $font-white-color;
+    font-size: 2rem;
     font-weight: bold;
+
+    letter-spacing: 3px;
     text-align: center;
-    margin-bottom: 7rem;
+    text-shadow: $button-color 2px 2px;
+    text-transform: uppercase;
 
     @media (max-width: 991px) {
       padding-top: 5rem;
-      font-size: 2.2rem;
+      font-size: 1.9rem;
     }
 
     @media (max-width: 685px) {
-      font-size: 1.8rem;
+      font-size: 1.3rem;
     }
   }
 }
@@ -28,7 +42,7 @@
   border-radius: 5px;
   overflow: hidden;
   color: $font-white-color;
-  background: $second-color;
+  background: $background-opacity;
 
   @media (max-width: 1199px) {
     font-size: 1rem;

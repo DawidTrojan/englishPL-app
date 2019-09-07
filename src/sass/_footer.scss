@@ -1,13 +1,7 @@
 @import "colors";
 
 footer {
-  background: linear-gradient(
-    135deg,
-    rgba(80, 255, 134, 1) 1%,
-    rgba(181, 54, 217, 1) 15%,
-    rgba(31, 42, 133, 1) 42%,
-    rgba(31, 25, 95, 1) 100%
-  );
+  background: $footer-color;
   min-height: 5rem;
   width: 100%;
   color: $font-white-color;
@@ -25,6 +19,62 @@ footer {
     align-items: flex-end;
 
     font-size: 0.9rem;
-    text-transform: uppercase;
+  }
+  .footer_box {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+
+    @media (max-width: 991px) {
+      width: 70%;
+    }
+
+    @media (max-width: 767px) {
+      width: 80%;
+    }
+
+    @media (max-width: 767px) {
+      width: 90%;
+    }
+
+    @media (max-width: 429px) {
+      width: 100%;
+    }
+
+    .footer_icons {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      width: 20%;
+    }
+
+    i {
+      font-size: 1.5rem;
+      color: $header-color;
+
+      @media (max-width: 429px) {
+        font-size: 1.2rem;
+      }
+    }
+
+    span {
+      color: $header-color;
+      font-size: 0.8rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-align: center;
+
+      text-transform: uppercase;
+
+      @media (max-width: 575px) {
+        font-size: 0.6rem;
+      }
+
+      @media (max-width: 429px) {
+        font-size: 0.5rem;
+        letter-spacing: 1px;
+      }
+    }
   }
 }

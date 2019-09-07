@@ -37,14 +37,15 @@
   transition: background-size 0.4s;
 
   &:hover {
-    color: $font-white-color;
+    color: $green-color;
     text-decoration: none;
-    background-size: 100% 2px;
+    background-image: none;
   }
 }
 
 .auth_link {
-  color: $green-color;
+  color: $font-white-color;
+  text-shadow: $button-color 2px 2px;
   font-size: 0.9rem;
   text-transform: uppercase;
   cursor: pointer;
@@ -56,9 +57,9 @@
   transition: background-size 0.5s;
 
   &:hover {
-    color: $font-white-color;
+    color: $green-color;
     text-decoration: none;
-    background-size: 100% 2px;
+    background-image: none;
   }
 
   @media (max-width: 991px) {
@@ -76,14 +77,7 @@
   right: 0px;
   top: 250px;
   width: 125px;
-  background: linear-gradient(
-    45deg,
-    rgba(181, 54, 217, 1) 0%,
-    rgba(31, 42, 142, 1) 73%,
-    rgba(31, 42, 142, 1) 73%,
-    rgba(31, 42, 122, 1) 83%,
-    rgba(31, 42, 133, 1) 99%
-  );
+  background: rgba(80, 255, 134, 0.8);
   border-radius: 5px;
   padding: 0.2rem 0.3rem;
   font-size: 1.2rem;
@@ -107,7 +101,7 @@
 }
 
 .material-icons {
-  color: white;
+  color: $font-white-color;
   font-size: 2rem;
 }
 
@@ -130,7 +124,7 @@
   position: absolute;
   top: 80px;
   left: 0;
-  background: $main-color;
+  background: $header-color;
   opacity: 0.9;
   border-radius: 3px;
   z-index: 2;
@@ -150,7 +144,7 @@
 
     li {
       width: 100%;
-      border-bottom: 1px solid #544db8;
+      border-bottom: 1px dotted #544db8;
       padding: 0.5rem 0;
     }
   }

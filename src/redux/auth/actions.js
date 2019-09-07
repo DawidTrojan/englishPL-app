@@ -1,11 +1,10 @@
-export const START_LOG_IN = "[start-login] Starting login";
-export const LOG_IN = "[login] Login Success";
-export const LOG_IN_ERROR = "[login-error] Login Error";
+export const SIGNED_IN = "[signin-success] Signin success";
+export const SIGN_IN_ERROR = "[sign-error] Signin rrror";
 
-export const SIGN_OUT = "[signout] Signout Success";
+export const SIGNED_UP = "[signup] Signup success";
+export const SIGN_UP_ERROR = "[signup-error] Signup error";
 
-export const SIGN_UP = "[signup] Signup Success";
-export const SIGN_UP_ERROR = "[signup-error] Signup Error";
+export const SIGN_OUT = "[signout] Signout success";
 
 export const signIn = (email, password) => {
   return (dispatch, getState, { getFirebase }) => {
@@ -15,13 +14,10 @@ export const signIn = (email, password) => {
       .auth()
       .signInWithEmailAndPassword(email, password)
       .then(() => {
-        dispatch({ type: START_LOG_IN });
-      })
-      .then(() => {
-        dispatch({ type: LOG_IN });
+        dispatch({ type: SIGNED_IN });
       })
       .catch(error => {
-        dispatch({ type: LOG_IN_ERROR, error });
+        dispatch({ type: SIGN_IN_ERROR, error });
       });
   };
 };
@@ -59,7 +55,7 @@ export const signUp = newUser => {
           });
       })
       .then(() => {
-        dispatch({ type: SIGN_UP });
+        dispatch({ type: SIGNED_UP });
       })
       .catch(error => {
         dispatch({ type: SIGN_UP_ERROR, error });

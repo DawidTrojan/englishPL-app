@@ -6,21 +6,28 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-bottom: 6rem;
+  min-height: 100vh;
+  margin-bottom: 11rem;
   word-wrap: break-word;
 
   @media (max-width: 517px) {
-    margin-bottom: 4rem;
+    margin-bottom: 10rem;
   }
   @media (max-width: 490px) {
-    margin-bottom: 5rem;
+    margin-bottom: 9rem;
   }
 
   h2 {
-    color: $font-white-color;
-    text-align: center;
     padding-bottom: 4rem;
+    font-family: "Livvic", sans-serif;
+    color: $font-white-color;
+    font-size: 2rem;
     font-weight: bold;
+
+    letter-spacing: 3px;
+    text-align: center;
+    text-shadow: $button-color 2px 2px;
+    text-transform: uppercase;
 
     @media (max-width: 991px) {
       padding-top: 3rem;
@@ -29,7 +36,7 @@
 
     @media (max-width: 490px) {
       margin-top: 3rem;
-      font-size: 1.1rem;
+      font-size: 1.3rem;
     }
   }
 }
@@ -108,7 +115,7 @@
 
   .players_list__positions {
     color: $font-white-color;
-    background: $second-color;
+    background: $background-opacity;
   }
 
   .players_table__header {

@@ -4,8 +4,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 75vh;
+  margin-bottom: 11rem;
 
-  margin-bottom: 5rem;
+  @media (max-width: 991px) {
+    min-height: 100vh;
+  }
+  @media (max-width: 517px) {
+    margin-bottom: 10rem;
+  }
+
+  @media (max-width: 517px) {
+    margin-top: 5rem;
+    min-height: 70vh;
+  }
+  @media (max-width: 490px) {
+    margin-bottom: 9rem;
+  }
 }
 
 .myTeam_box {
@@ -13,40 +28,14 @@
   flex-direction: column;
   color: $font-white-color;
   text-align: center;
+  width: 50%;
   padding: 3rem;
-  position: relative;
-
-  color: $font-white-color;
-  background: $second-color;
-  background-clip: padding-box;
-  border: solid 5px transparent;
+  background: $background-opacity;
   border-radius: 1em;
-
-  &:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    margin: -5px;
-    border-radius: inherit;
-    background: linear-gradient(
-      135deg,
-      rgba(80, 255, 134, 1) 0%,
-      rgba(80, 255, 134, 1) 4%,
-      rgba(99, 91, 209, 1) 24%,
-      rgba(182, 54, 217, 1) 48%,
-      rgba(154, 59, 250, 1) 75%,
-      rgb(40, 35, 104) 89%,
-      rgb(51, 45, 134) 100%
-    );
-  }
 
   h4 {
     padding: 0.7rem 0;
-    border-bottom: 1px solid $border-color;
+    border-bottom: 1px solid $button-color;
     font-size: 1.1rem;
     font-weight: bold;
     color: $green-color;
@@ -75,11 +64,12 @@
   a {
     text-decoration: none;
     display: block;
-    color: $green-color;
+    color: $font-white-color;
     text-transform: uppercase;
 
     &:hover {
       transform: scale(1.1);
+      color: $green-color;
     }
   }
 
@@ -100,13 +90,20 @@
   }
 
   @media (max-width: 991px) {
-    margin-top: 7rem;
     padding: 2rem;
+    width: 70%;
+  }
+
+  @media (max-width: 767px) {
+    padding: 2rem;
+    width: 80%;
   }
   @media (max-width: 497px) {
     padding: 1.5rem;
+    width: 85%;
   }
   @media (max-width: 451px) {
     padding: 1rem;
+    width: 90%;
   }
 }

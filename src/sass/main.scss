@@ -24,19 +24,21 @@ html {
   height: 100%;
 }
 .wrapper {
-  min-height: 50rem;
-  padding-bottom: 5rem;
+  height: auto;
+
   display: flex;
   justify-content: center;
   align-items: center;
-}
-#root {
-  height: 100%;
 }
 body {
   min-height: 100%;
   background: $main-color;
   position: relative;
+  background: url(../photo2.jpg);
+  background-position: center top;
+
+  background-size: cover;
+  background-attachment: fixed;
 
   h2 {
     font-family: "Spectral SC", serif;

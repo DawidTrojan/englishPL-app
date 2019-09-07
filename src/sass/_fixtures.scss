@@ -3,24 +3,38 @@
 .fixtures_container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  margin-bottom: 7rem;
+  min-height: 75vh;
+  margin-bottom: 11rem;
+
+  @media (max-width: 517px) {
+    margin-bottom: 10rem;
+  }
+  @media (max-width: 490px) {
+    margin-bottom: 9rem;
+  }
 
   h2 {
+    padding-bottom: 3rem;
+    font-family: "Livvic", sans-serif;
     color: $font-white-color;
+    font-size: 2rem;
     font-weight: bold;
+
+    letter-spacing: 3px;
     text-align: center;
-    margin-bottom: 3rem;
+    text-shadow: $button-color 2px 2px;
+    text-transform: uppercase;
 
     @media (max-width: 991px) {
       padding-top: 5rem;
-      font-size: 2.2rem;
+      font-size: 1.9rem;
     }
 
     @media (max-width: 490px) {
       margin-top: 3rem;
-      font-size: 1.8rem;
+      font-size: 1.3rem;
     }
   }
 }
@@ -29,7 +43,7 @@
   border-radius: 5px;
   overflow: hidden;
   color: $font-white-color;
-  background: $second-color;
+  background: $background-opacity;
 
   td {
     padding: 0.5rem 2rem;
@@ -115,16 +129,16 @@
 .fixtures_result_home {
   font-weight: bold;
   background: $main-color;
-  color: $green-color;
-  padding: 0 0.7rem;
-  border-right: 1px solid $font-white-color;
+  color: $font-white-color;
+  padding: 0.2rem 0.7rem;
+  border-right: 1px dotted $font-white-color;
 }
 
 .fixtures_result_away {
   font-weight: bold;
   background: $main-color;
-  color: $green-color;
-  padding: 0 0.7rem;
+  color: $font-white-color;
+  padding: 0.2rem 0.7rem;
 }
 
 .fixtures_select {

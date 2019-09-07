@@ -3,44 +3,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 5rem;
+  margin-bottom: 11rem;
 }
 .signup_form {
   color: $font-white-color;
   width: 50%;
   padding-top: 2rem;
-  position: relative;
-
-  background: $second-color;
-  background-clip: padding-box;
-  border: solid 5px transparent;
+  background: $background-opacity;
   border-radius: 1em;
 
-  &:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    margin: -5px;
-    border-radius: inherit;
-    background: linear-gradient(
-      135deg,
-      rgba(80, 255, 134, 1) 0%,
-      rgba(80, 255, 134, 1) 4%,
-      rgba(99, 91, 209, 1) 24%,
-      rgba(182, 54, 217, 1) 48%,
-      rgba(154, 59, 250, 1) 75%,
-      rgb(40, 35, 104) 89%,
-      rgb(51, 45, 134) 100%
-    );
-  }
   h2 {
     text-align: center;
     margin-bottom: 3rem;
     font-weight: bold;
+    text-shadow: $button-color 2px 2px;
+    letter-spacing: 2px;
 
     @media (max-width: 552px) {
       font-size: 1.8rem;
@@ -48,8 +25,11 @@
   }
 
   .form_control_signup {
+    background: $background-opacity;
+    color: $font-white-color;
     &:focus {
-      border: solid $green-color 2px;
+      background: lighten($background-opacity, 30%);
+      color: $font-white-color;
     }
   }
 
@@ -68,7 +48,6 @@
   }
 
   .signup_select {
-    border: solid $green-color 1px;
     background: $second-color;
     color: $font-white-color;
 
@@ -89,10 +68,10 @@
 
     .signup_button {
       padding: 0.5rem 1.5rem;
-      background: #a032c8;
+      background: $button-color;
       color: $font-white-color;
       font-weight: bold;
-      border-color: #a032c8;
+      border-color: $button-color;
 
       &:hover {
         background: transparent;
@@ -110,7 +89,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: red;
+    color: $error-color;
     text-align: center;
     margin: 2rem 0;
     font-weight: bold;
