@@ -70,7 +70,7 @@
   td {
     padding: 0.5rem 2rem;
     text-align: center;
-    border-bottom: solid $border-color 1px;
+    border-bottom: 1px solid $button-color;
     @media (max-width: 898px) {
       padding: 0.5rem 0.9rem;
     }
@@ -126,7 +126,6 @@
 }
 
 .players_select {
-  border: solid $green-color 1px;
   background: $second-color;
   color: $font-white-color;
   margin-bottom: 3rem;

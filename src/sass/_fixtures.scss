@@ -48,7 +48,7 @@
   td {
     padding: 0.5rem 2rem;
     text-align: center;
-    border-bottom: solid $border-color 1px;
+    border-bottom: 1px solid $button-color;
 
     @media (max-width: 991px) {
       padding: 0rem 1.6rem;
@@ -142,7 +142,6 @@
 }
 
 .fixtures_select {
-  border: solid $green-color 1px;
   background: $second-color;
   color: $font-white-color;
   margin-bottom: 3rem;

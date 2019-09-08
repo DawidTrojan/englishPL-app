@@ -70,7 +70,7 @@
   td {
     padding: 0.5rem 2rem;
     text-align: center;
-    border-bottom: solid $border-color 1px;
+    border-bottom: 1px solid $button-color;
 
     @media (max-width: 991px) {
       padding: 0.4rem 1rem;
