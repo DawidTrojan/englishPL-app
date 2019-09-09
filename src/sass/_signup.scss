@@ -1,4 +1,4 @@
-@import "colors";
+@import "variables";
 .signup_container {
   display: flex;
   justify-content: center;
@@ -12,11 +12,12 @@
   background: $background-opacity;
   border-radius: 1em;
 
-  h2 {
+  h3 {
     text-align: center;
+    font-size: 2.3rem;
     margin-bottom: 3rem;
     font-weight: bold;
-    text-shadow: $button-color 2px 2px;
+    text-shadow: $title-shadow 2px 2px;
     letter-spacing: 2px;
 
     @media (max-width: 552px) {
@@ -68,14 +69,15 @@
 
     .signup_button {
       padding: 0.5rem 1.5rem;
-      background: $button-color;
-      color: $font-white-color;
+      background: $green-color;
+      border-color: $green-color;
+      color: $header-color;
       font-weight: bold;
-      border-color: $button-color;
 
       &:hover {
         background: transparent;
         transform: scale(1.1);
+        color: $font-white-color;
       }
 
       @media (max-width: 552px) {

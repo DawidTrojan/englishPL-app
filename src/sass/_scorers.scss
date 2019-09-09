@@ -1,4 +1,4 @@
-@import "colors";
+@import "variables";
 
 .scorers_container {
   display: flex;
@@ -16,7 +16,7 @@
   }
 
   h2 {
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
     font-family: "Livvic", sans-serif;
     color: $font-white-color;
     font-size: 2rem;
@@ -24,7 +24,7 @@
 
     letter-spacing: 3px;
     text-align: center;
-    text-shadow: $button-color 2px 2px;
+    text-shadow: $title-shadow 2px 2px;
     text-transform: uppercase;
 
     @media (max-width: 991px) {
@@ -35,6 +35,12 @@
     @media (max-width: 685px) {
       font-size: 1.3rem;
     }
+  }
+
+  span {
+    color: $font-white-color;
+    font-size: 1.3rem;
+    padding-bottom: 2rem;
   }
 }
 
@@ -70,7 +76,7 @@
   td {
     padding: 0.5rem 2rem;
     text-align: center;
-    border-bottom: 1px solid $button-color;
+    border-bottom: 1px solid $footer-color;
 
     @media (max-width: 991px) {
       padding: 0.4rem 1rem;

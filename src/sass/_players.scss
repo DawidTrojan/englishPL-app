@@ -1,4 +1,4 @@
-@import "colors";
+@import "variables";
 
 .players_container {
   display: flex;
@@ -26,7 +26,7 @@
 
     letter-spacing: 3px;
     text-align: center;
-    text-shadow: $button-color 2px 2px;
+    text-shadow: $title-shadow 2px 2px;
     text-transform: uppercase;
 
     @media (max-width: 991px) {
@@ -70,7 +70,7 @@
   td {
     padding: 0.5rem 2rem;
     text-align: center;
-    border-bottom: 1px solid $button-color;
+    border-bottom: 1px solid $footer-color;
     @media (max-width: 898px) {
       padding: 0.5rem 0.9rem;
     }

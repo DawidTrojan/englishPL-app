@@ -6,7 +6,7 @@ const SignedInLinks = ({ signOut, profile, closeAfterClick }) => {
     <>
       <li>
         <div className="user_greeting_box">
-          <span>Hello {profile.initials}! How are you?</span>
+          <span>Hello {profile.initials}!</span>
         </div>
       </li>
       <li>

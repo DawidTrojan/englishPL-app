@@ -8,7 +8,7 @@ const mapState = state => ({
 
 const mapDispatch = dispatch => {
   return {
-    getScorers: () => dispatch(getScorers())
+    getScorers: filter => dispatch(getScorers(filter))
   };
 };
 

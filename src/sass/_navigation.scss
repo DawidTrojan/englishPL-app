@@ -1,4 +1,4 @@
-@import "colors";
+@import "variables";
 
 .navigation {
   .navigation_list {
@@ -31,36 +31,22 @@
   font-size: 0.9rem;
   text-transform: uppercase;
   padding-bottom: 5px;
-  background-image: linear-gradient($green-color, currentColor);
-  background-position: 0% 100%;
-  background-repeat: no-repeat;
-  background-size: 0% 4px;
-  transition: background-size 0.4s;
 
   &:hover {
-    color: $green-color;
+    color: darken($font-white-color, 50%);
     text-decoration: none;
-    background-image: none;
   }
 }
 
 .auth_link {
   color: $font-white-color;
-  text-shadow: $button-color 2px 2px;
   font-size: 0.9rem;
   text-transform: uppercase;
-  cursor: pointer;
   padding-bottom: 5px;
-  background-image: linear-gradient($green-color, currentColor);
-  background-position: 0% 100%;
-  background-repeat: no-repeat;
-  background-size: 0% 2px;
-  transition: background-size 0.5s;
 
   &:hover {
-    color: $green-color;
+    color: darken($font-white-color, 50%);
     text-decoration: none;
-    background-image: none;
   }
 
   @media (max-width: 991px) {
@@ -73,14 +59,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: $font-white-color;
   position: fixed;
   right: 0px;
   top: 250px;
-  width: 125px;
-  background: rgba(80, 255, 134, 0.8);
+  width: 5rem;
+  background: rgba(80, 255, 134, 0.9);
   border-radius: 5px;
-  padding: 0.2rem 0.3rem;
   font-size: 1.2rem;
 
   @media (max-width: 991px) {
@@ -90,13 +74,13 @@
   }
 
   span {
-    padding: 1rem 0.9rem;
-    color: $font-white-color;
-    font-family: "Pompiere", cursive;
-    letter-spacing: 0.6px;
+    padding: 0.8rem 1rem;
+    color: $second-color;
+    letter-spacing: 0.8px;
 
     @media (max-width: 991px) {
       padding: 0;
+      color: $green-color;
     }
   }
 }
@@ -126,7 +110,6 @@
   top: 80px;
   left: 0;
   background: $header-color;
-  opacity: 0.9;
   border-radius: 3px;
   z-index: 2;
 
@@ -145,7 +128,6 @@
 
     li {
       width: 100%;
-      border-bottom: 1px dotted #544db8;
       padding: 0.5rem 0;
     }
   }

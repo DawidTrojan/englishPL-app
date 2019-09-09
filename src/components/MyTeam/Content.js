@@ -5,36 +5,36 @@ const Content = ({ myTeam }) => (
     <div>
       <img src={myTeam.crestUrl} alt={myTeam.name} />
     </div>
-    <h4>
+    <div>
       Name: <span>{myTeam.name}</span>
-    </h4>
-    <h4>
+    </div>
+    <div>
       Address: <span>{myTeam.address}</span>
-    </h4>
-    <h4>
+    </div>
+    <div>
       Colors: <span>{myTeam.clubColors}</span>
-    </h4>
-    <h4>
+    </div>
+    <div>
       Founded: <span>{myTeam.founded}</span>
-    </h4>
-    <h4>
+    </div>
+    <div>
       Stadium: <span>{myTeam.venue}</span>
-    </h4>
+    </div>
     {!myTeam.phone ? null : (
-      <h4>
+      <div>
         Phone: <span>{myTeam.phone}</span>
-      </h4>
+      </div>
     )}
     {!myTeam.email ? null : (
-      <h4>
+      <div>
         Email: <span>{myTeam.email}</span>
-      </h4>
+      </div>
     )}
-    <h4>
+    <div>
       <a href={myTeam.website} target="_blank" rel="noopener noreferrer">
         Go to official website!
       </a>
-    </h4>
+    </div>
   </div>
 );
 

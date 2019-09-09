@@ -2,15 +2,16 @@
   "name": "football-feast",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://dawidtrojan.github.io/English_PL",
   "dependencies": {
     "@csstools/normalize.css": "^10.1.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.22",
     "@fortawesome/free-solid-svg-icons": "^5.10.2",
     "@fortawesome/react-fontawesome": "^0.1.4",
     "@material-ui/core": "^4.3.3",
-    "aos": "^3.0.0-beta.6",
     "firebase": "^6.4.2",
     "font-awesome": "^4.7.0",
+    "gh-pages": "^2.1.1",
     "node-sass": "^4.12.0",
     "react": "^16.9.0",
     "react-bootstrap": "^1.0.0-beta.11",
@@ -30,7 +31,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [

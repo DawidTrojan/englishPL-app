@@ -1,4 +1,4 @@
-@import "colors";
+@import "variables";
 
 .signin_container {
   display: flex;
@@ -14,11 +14,12 @@
   position: relative;
   border-radius: 1rem;
 
-  h2 {
+  h3 {
     text-align: center;
+    font-size: 2.3rem;
     margin-bottom: 5rem;
     font-weight: bold;
-    text-shadow: $button-color 2px 2px;
+    text-shadow: $title-shadow 2px 2px;
     letter-spacing: 2px;
 
     @media (max-width: 552px) {
@@ -49,14 +50,15 @@
 
     .signin_button {
       padding: 0.5rem 1.5rem;
-      background: $button-color;
-      border-color: $button-color;
-      color: $font-white-color;
+      background: $green-color;
+      border-color: $green-color;
+      color: $header-color;
       font-weight: bold;
 
       &:hover {
         background: transparent;
         transform: scale(1.1);
+        color: $font-white-color;
       }
 
       @media (max-width: 552px) {

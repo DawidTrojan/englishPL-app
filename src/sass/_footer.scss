@@ -1,4 +1,4 @@
-@import "colors";
+@import "variables";
 
 footer {
   background: $footer-color;
@@ -12,6 +12,7 @@ footer {
 
   position: absolute;
   bottom: 0;
+  right: 0;
 
   .footer_container {
     display: flex;
@@ -21,7 +22,7 @@ footer {
     font-size: 0.9rem;
   }
   .footer_box {
-    width: 50%;
+    width: 45%;
     display: flex;
     justify-content: space-around;
 

@@ -1,4 +1,4 @@
-@import "colors";
+@import "variables";
 
 .myTeam_container {
   display: flex;
@@ -33,12 +33,11 @@
   background: $background-opacity;
   border-radius: 1em;
 
-  h4 {
+  div {
     padding: 0.7rem 0;
-    border-bottom: 1px solid $button-color;
     font-size: 1.1rem;
     font-weight: bold;
-    color: $green-color;
+    color: $font-white-color;
 
     @media (max-width: 500px) {
       font-size: 1rem;

@@ -1,11 +1,11 @@
-@import "colors";
+@import "variables";
 
 .standings_container {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100%;
   margin-bottom: 11rem;
 
   @media (max-width: 517px) {
@@ -18,7 +18,7 @@
   h2 {
     padding-bottom: 5rem;
     font-family: "Livvic", sans-serif;
-    text-shadow: $button-color 2px 2px;
+    text-shadow: $title-shadow 2px 2px;
     color: $font-white-color;
     font-size: 2rem;
     font-weight: bold;
@@ -71,9 +71,9 @@
   }
 
   td {
-    padding: 0.7rem 1.8rem;
+    padding: 0.7rem 1.6rem;
     text-align: center;
-    border-bottom: 1px solid $button-color;
+    border-bottom: 1px solid $footer-color;
 
     @media (max-width: 924px) {
       padding: 0.5rem 0.9rem;

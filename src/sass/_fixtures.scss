@@ -1,4 +1,4 @@
-@import "colors";
+@import "variables";
 
 .fixtures_container {
   display: flex;
@@ -6,7 +6,7 @@
   justify-content: flex-start;
   align-items: center;
   min-height: 75vh;
-  margin-bottom: 11rem;
+  margin-bottom: 5rem;
 
   @media (max-width: 517px) {
     margin-bottom: 10rem;
@@ -24,7 +24,7 @@
 
     letter-spacing: 3px;
     text-align: center;
-    text-shadow: $button-color 2px 2px;
+    text-shadow: $title-shadow 2px 2px;
     text-transform: uppercase;
 
     @media (max-width: 991px) {
@@ -48,7 +48,7 @@
   td {
     padding: 0.5rem 2rem;
     text-align: center;
-    border-bottom: 1px solid $button-color;
+    border-bottom: 1px solid $footer-color;
 
     @media (max-width: 991px) {
       padding: 0rem 1.6rem;
@@ -128,15 +128,15 @@
 
 .fixtures_result_home {
   font-weight: bold;
-  background: $main-color;
+  background: $result-color;
   color: $font-white-color;
   padding: 0.2rem 0.7rem;
-  border-right: 1px dotted $font-white-color;
+  border-right: 1px solid $font-white-color;
 }
 
 .fixtures_result_away {
   font-weight: bold;
-  background: $main-color;
+  background: $result-color;
   color: $font-white-color;
   padding: 0.2rem 0.7rem;
 }

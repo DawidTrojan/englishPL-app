@@ -5,7 +5,7 @@
 @import "scorers";
 @import "fixtures";
 @import "footer";
-@import "colors";
+@import "variables";
 @import "navigation";
 @import "teams";
 @import "players";
@@ -24,18 +24,17 @@ html {
   height: 100%;
 }
 .wrapper {
-  height: auto;
-
+  min-height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 body {
   min-height: 100%;
-  background: $main-color;
   position: relative;
   background: url(../photo2.jpg);
   background-position: center top;
+  background-repeat: no-repeat;
 
   background-size: cover;
   background-attachment: fixed;

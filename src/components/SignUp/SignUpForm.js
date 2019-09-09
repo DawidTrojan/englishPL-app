@@ -7,7 +7,7 @@ const SignUpForm = ({ onSubmit, onChange, error, success }) => (
     <div className="ball_icon__container">
       <i className="material-icons ball_icon">sports_soccer</i>
     </div>
-    <h2>Sign Up</h2>
+    <h3>SIGN UP</h3>
     <Form.Group controlId="email" className="signup_group">
       <Col xl="10" lg="11" md="11" xs="12">
         <Form.Label className="signup_label">
