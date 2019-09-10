@@ -8,7 +8,6 @@ Technologies used to create application: react, redux, google firebase, sass, bo
 
 ![screenshot](https://user-images.githubusercontent.com/51854427/64607193-4f5e2280-d3c8-11e9-8248-06cf3fda3977.png)
 ![screenshot2](https://user-images.githubusercontent.com/51854427/64607951-d5c73400-d3c9-11e9-923f-3d18075aa08c.png)
-![screenshot3](https://user-images.githubusercontent.com/51854427/64607955-d9f35180-d3c9-11e9-9975-680116175f61.png)
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
