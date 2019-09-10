@@ -4,7 +4,7 @@ English PL is a responsive application dedicated to English Premier League. The 
 
 Technologies used to create application: react, redux, google firebase, sass, bootstrap.
 
-
+![screenshot](https://user-images.githubusercontent.com/51854427/64607193-4f5e2280-d3c8-11e9-8248-06cf3fda3977.png)
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
