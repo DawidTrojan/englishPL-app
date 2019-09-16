@@ -25,6 +25,10 @@
     flex-direction: column;
     height: 100%;
 
+    .Cursor--blinking {
+      display: none;
+    }
+
     .dashboard_title {
       padding: 1rem 0 2rem 0;
       text-align: center;

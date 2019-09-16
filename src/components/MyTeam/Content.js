@@ -14,9 +14,11 @@ const Content = ({ myTeam }) => (
     <div>
       Colors: <span>{myTeam.clubColors}</span>
     </div>
-    <div>
-      Founded: <span>{myTeam.founded}</span>
-    </div>
+    {!myTeam.founded ? null : (
+      <div>
+        Founded: <span>{myTeam.founded}</span>
+      </div>
+    )}
     <div>
       Stadium: <span>{myTeam.venue}</span>
     </div>
