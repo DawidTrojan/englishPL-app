@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/English_PL/static/css/main.aa7911ed.chunk.css",
-    "main.js": "/English_PL/static/js/main.1f1873d1.chunk.js",
-    "main.js.map": "/English_PL/static/js/main.1f1873d1.chunk.js.map",
-    "runtime~main.js": "/English_PL/static/js/runtime~main.c167bf2d.js",
-    "runtime~main.js.map": "/English_PL/static/js/runtime~main.c167bf2d.js.map",
-    "static/css/2.39ea3335.chunk.css": "/English_PL/static/css/2.39ea3335.chunk.css",
-    "static/js/2.5b59e896.chunk.js": "/English_PL/static/js/2.5b59e896.chunk.js",
-    "static/js/2.5b59e896.chunk.js.map": "/English_PL/static/js/2.5b59e896.chunk.js.map",
-    "index.html": "/English_PL/index.html",
-    "precache-manifest.273505f5078aeffb21c18f0272a9c95f.js": "/English_PL/precache-manifest.273505f5078aeffb21c18f0272a9c95f.js",
-    "service-worker.js": "/English_PL/service-worker.js",
-    "static/css/2.39ea3335.chunk.css.map": "/English_PL/static/css/2.39ea3335.chunk.css.map",
-    "static/css/main.aa7911ed.chunk.css.map": "/English_PL/static/css/main.aa7911ed.chunk.css.map",
-    "static/media/font-awesome.min.css": "/English_PL/static/media/fontawesome-webfont.fee66e71.woff",
-    "static/media/main.scss": "/English_PL/static/media/photo2.0c901853.jpg"
+    "main.css": "/englishPL-app/static/css/main.92023e6c.chunk.css",
+    "main.js": "/englishPL-app/static/js/main.1f1873d1.chunk.js",
+    "main.js.map": "/englishPL-app/static/js/main.1f1873d1.chunk.js.map",
+    "runtime~main.js": "/englishPL-app/static/js/runtime~main.f40597a3.js",
+    "runtime~main.js.map": "/englishPL-app/static/js/runtime~main.f40597a3.js.map",
+    "static/css/2.633357d5.chunk.css": "/englishPL-app/static/css/2.633357d5.chunk.css",
+    "static/js/2.65a7f8f3.chunk.js": "/englishPL-app/static/js/2.65a7f8f3.chunk.js",
+    "static/js/2.65a7f8f3.chunk.js.map": "/englishPL-app/static/js/2.65a7f8f3.chunk.js.map",
+    "index.html": "/englishPL-app/index.html",
+    "precache-manifest.af085fd4883964287164d7973d202958.js": "/englishPL-app/precache-manifest.af085fd4883964287164d7973d202958.js",
+    "service-worker.js": "/englishPL-app/service-worker.js",
+    "static/css/2.633357d5.chunk.css.map": "/englishPL-app/static/css/2.633357d5.chunk.css.map",
+    "static/css/main.92023e6c.chunk.css.map": "/englishPL-app/static/css/main.92023e6c.chunk.css.map",
+    "static/media/font-awesome.min.css": "/englishPL-app/static/media/fontawesome-webfont.fee66e71.woff",
+    "static/media/main.scss": "/englishPL-app/static/media/photo2.0c901853.jpg"
   }
 }
