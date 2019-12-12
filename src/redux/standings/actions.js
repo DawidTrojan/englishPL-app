@@ -25,7 +25,7 @@ export const fetchedStandingsError = payload => {
 export const getStandings = () => dispatch => {
   dispatch(startFetchingStandings());
   const url =
-    "http://api.football-data.org/v2/competitions/2021/standings?standingType=TOTAL";
+    "https://api.football-data.org/v2/competitions/2021/standings?standingType=TOTAL";
   fetch(url, {
     headers: {
       "X-Auth-Token": "408aa47e157148eca4dd2d77436dff81"

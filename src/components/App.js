@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
 import Main from "../components/Main";
@@ -16,7 +16,7 @@ import { Container } from "react-bootstrap";
 
 const App = () => {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Header />
       <Teams />
       <Container className="wrapper">

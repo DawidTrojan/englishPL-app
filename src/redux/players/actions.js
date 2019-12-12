@@ -25,7 +25,7 @@ export const fetchedPlayersError = payload => {
 export const getPlayers = id => dispatch => {
   dispatch(startFetchingPlayers());
   const getPlayersUrl = (id = 57) =>
-    `http://api.football-data.org//v2/teams/${id}`;
+    `https://api.football-data.org//v2/teams/${id}`;
   fetch(getPlayersUrl(id), {
     headers: {
       "X-Auth-Token": "408aa47e157148eca4dd2d77436dff81"

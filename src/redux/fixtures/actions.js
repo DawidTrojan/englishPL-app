@@ -25,7 +25,7 @@ export const fetchedFixturesError = payload => {
 export const getFixtures = matchday => dispatch => {
   dispatch(startFetchingFixtures());
   const getFixturesUrl = (matchday = 1) =>
-    `http://api.football-data.org//v2/competitions/2021/matches?matchday=${matchday}`;
+    `https://api.football-data.org//v2/competitions/2021/matches?matchday=${matchday}`;
   fetch(getFixturesUrl(matchday), {
     headers: {
       "X-Auth-Token": "408aa47e157148eca4dd2d77436dff81"
