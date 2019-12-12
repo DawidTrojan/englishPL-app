@@ -4,7 +4,7 @@ import thunk from "redux-thunk";
 import reducer from "./reducers";
 import { reduxFirestore, getFirestore } from "redux-firestore";
 import { reactReduxFirebase, getFirebase } from "react-redux-firebase";
-import firebase from "../config/firebase";
+import firebase from "../firebase/firebase";
 
 const store = createStore(
   reducer,
