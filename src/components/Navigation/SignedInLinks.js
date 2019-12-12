@@ -8,7 +8,7 @@ const SignedInLinks = ({ signOut, profile, closeAfterClick }) => {
     return <Redirect to="/" />;
   }
 
-  const handleClick = () => {
+  const handleOnClick = () => {
     setLogout(true);
     signOut();
   };
@@ -21,9 +21,9 @@ const SignedInLinks = ({ signOut, profile, closeAfterClick }) => {
         </div>
       </li>
       <li>
-        <a className="auth_link" href="/" onClick={handleClick}>
-          <span>Sign Out</span>
-        </a>
+        <span className="auth_link" onClick={handleOnClick}>
+          Sign Out
+        </span>
       </li>
       <li>
         <NavLink onClick={closeAfterClick} className="auth_link" to="/myteam">
